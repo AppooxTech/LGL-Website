@@ -8,9 +8,7 @@
  ?>
 
 <div>
-    <hr>
     <h1>This is Blogs</h1>
-    <hr>
 </div>
 
 <?php

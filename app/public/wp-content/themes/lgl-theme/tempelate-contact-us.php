@@ -8,9 +8,7 @@
  ?>
 
 <div>
-    <hr>
     <h1>This is Contact Us</h1>
-    <hr>
 </div>
 
 <?php
