@@ -3,4 +3,16 @@
 // This is the Blogs page
 ?>  
 
-<h2>This is where blogs are located</h2>
+<?php
+    get_header();
+ ?>
+
+<div>
+    <hr>
+    <h1>This is Blogs</h1>
+    <hr>
+</div>
+
+<?php
+    get_footer();
+ ?>

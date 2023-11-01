@@ -59,7 +59,7 @@
 /* Style the anchor links (if needed) */
 .navbar-items li a {
   text-decoration: none;
-  color: #333; /* Change the color as desired */
+  color: #333138; /* Change the color as desired */
   padding: 10px 20px; /* Adjust padding for each item */
   border: 1px solid #60656f; /* Add borders or other styling as needed */
   border-radius: 5px;
@@ -67,7 +67,9 @@
 
 /* Style for hover and active states */
 .navbar-items li a:hover {
-  background-color: #ccc; /* Change the background color for hover state */
+  background-color: #60656f; /* Change the background color for hover state */
+  border: 1px solid #ccc;
+  color: #f7f7ff;
 }
 
 /* Style for active state (current page) */

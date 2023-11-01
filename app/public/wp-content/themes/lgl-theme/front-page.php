@@ -2,7 +2,7 @@
     get_header();
  ?>
 
-<div class="carrousel">
+<div>
     <hr>
     <h1>Hello LGL World</h1>
     <hr>

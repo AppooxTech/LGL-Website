@@ -3,4 +3,16 @@
 // This is the products page
 ?>
 
-<h1>This is the products page</h1>
+<?php
+    get_header();
+ ?>
+
+<div>
+    <hr>
+    <h1>This is Products</h1>
+    <hr>
+</div>
+
+<?php
+    get_footer();
+ ?>

@@ -3,4 +3,16 @@
 // This is the Contact Us page
 ?>  
 
-<h1>This is Contact Us page</h1>
+<?php
+    get_header();
+ ?>
+
+<div>
+    <hr>
+    <h1>This is Contact Us</h1>
+    <hr>
+</div>
+
+<?php
+    get_footer();
+ ?>
