@@ -3,7 +3,9 @@
  ?>
 
 <div class="carrousel">
-<h1>Hello LGL World</h1>
+    <hr>
+    <h1>Hello LGL World</h1>
+    <hr>
 </div>
 
 <?php

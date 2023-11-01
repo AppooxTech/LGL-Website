@@ -2,7 +2,7 @@
 
 function enqueue_front_page_css() {
     if (is_front_page()) {
-        wp_enqueue_style('front-page-style', get_template_directory_uri() . '/css/front-page.scss');
+        wp_enqueue_style('front-page-style', get_template_directory_uri() . '/CSS/front-page.css');
     }
 }
 function custom_single_template($single_template) {
@@ -21,13 +21,13 @@ function custom_single_template($single_template) {
 
 function enqueue_specific_css() {
     if (is_page('products-page')) {
-        wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/products.scss');
+        wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/products.css');
     } elseif (is_page('blogs-page')) {
-        wp_enqueue_style('blogs-styles', get_template_directory_uri() . '/CSS/blog.scss');
+        wp_enqueue_style('blogs-styles', get_template_directory_uri() . '/CSS/blog.css');
     } elseif (is_page('software-page')) {
-        wp_enqueue_style('software-styles', get_template_directory_uri() . '/CSS/software.scss');
+        wp_enqueue_style('software-styles', get_template_directory_uri() . '/CSS/software.css');
     } elseif (is_page('contact-us-page')) {
-        wp_enqueue_style('contact-us-styles', get_template_directory_uri() . '/CSS/contact-us.scss');
+        wp_enqueue_style('contact-us-styles', get_template_directory_uri() . '/CSS/contact-us.css');
     }
     // Add more conditions for other pages as needed
 }
@@ -35,3 +35,4 @@ function enqueue_specific_css() {
 
 add_filter('single_template', 'custom_single_template');
 add_action('wp_enqueue_scripts', 'enqueue_specific_css');
+add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
