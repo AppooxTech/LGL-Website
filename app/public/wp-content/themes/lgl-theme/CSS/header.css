@@ -61,14 +61,14 @@
   text-decoration: none;
   color: #333138; /* Change the color as desired */
   padding: 10px 20px; /* Adjust padding for each item */
-  border: 1px solid #60656f; /* Add borders or other styling as needed */
+  /*border: 1px solid #60656f;  Add borders or other styling as needed */
   border-radius: 5px;
 }
 
 /* Style for hover and active states */
 .navbar-items li a:hover {
   background-color: #60656f; /* Change the background color for hover state */
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   color: #f7f7ff;
 }
 

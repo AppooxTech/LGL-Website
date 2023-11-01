@@ -46,4 +46,5 @@
             </ul>
         </nav>
     </header>
+    <hr> <!-- remove this in the end -->
 </body>

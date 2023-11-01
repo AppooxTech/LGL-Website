@@ -2,10 +2,8 @@
     get_header();
  ?>
 
-<div>
-    <hr>
+<div class="main-body">
     <h1>Hello LGL World</h1>
-    <hr>
 </div>
 
 <?php

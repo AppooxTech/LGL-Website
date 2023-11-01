@@ -12,7 +12,7 @@ function enqueue_header_css() {
 
 
 function enqueue_footer_css() {
-    wp_enqueue_style('footer-style', get_template_directory_uri() . '/CDD/footer.css');
+    wp_enqueue_style('footer-style', get_template_directory_uri() . '/CSS/footer.css');
 }
 
 
