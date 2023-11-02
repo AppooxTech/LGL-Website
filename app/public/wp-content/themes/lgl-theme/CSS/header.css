@@ -1,16 +1,41 @@
-.header-navbar {
-  background-color: #f7f7ff;
-  padding: 10px 0;
-  text-align: center; /* Center the text within the navbar */
-}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3&display=swap"); */
 
-.navbar-items {
-  list-style: none;
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+* {
   margin: 0;
-  padding: 0;
-  display: inline-block; /* Display the list items as inline-block to center them */
+  box-sizing: border-box;
 }
 
+.header-navbar {
+  background-color: #f1f6f5;
+  display: flex;
+  justify-content: space-between; /*Distribute items to the left and right */
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  margin-right: 20px;
+  margin-left: 20px;
+  gap: 30px;
+}
+
+.blog-products {
+  margin-left: 20px; /* Add margin between the logo and blog/products */
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 30px;
+}
+
+/* Rest of your existing CSS for the dropdown menu and navbar items */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -37,7 +62,6 @@
 .item {
   padding: 12px 16px;
 }
-
 .row {
   display: flex;
 }
@@ -46,60 +70,52 @@
   flex: 50%; /* Two columns, 2x2 structure */
 }
 
-.navbar-items {
-  list-style: none;
-  padding: 0;
-}
-
-.navbar-items li {
-  display: inline-block; /* Change 'inline-block' to 'inline' if you want them to display as inline elements */
-  margin-right: 10px; /* Adjust the spacing between items */
-}
-
 /* Style the anchor links (if needed) */
-.navbar-items li a {
+.navbar-item,
+.contact-us {
   text-decoration: none;
   color: #333138; /* Change the color as desired */
   padding: 10px 20px; /* Adjust padding for each item */
   /*border: 1px solid #60656f;  Add borders or other styling as needed */
   border-radius: 5px;
+  font-size: 30px;
 }
 
 /* Style for hover and active states */
-.navbar-items li a:hover {
-  background-color: #60656f; /* Change the background color for hover state */
+.navbar-item:hover,
+.contact-us:hover {
+  /*background-color: #60656f;  Change the background color for hover state */
   /* border: 1px solid #ccc; */
-  color: #f7f7ff;
+  color: #279af1;
 }
 
 /* Style for active state (current page) */
-.navbar-items li.current-menu-item a {
+.navbar-item.current-menu-item {
   background-color: #333; /* Change the background color for active state */
   color: #fff; /* Change the text color for active state */
 }
 
-/* Style the "dropdown" list item to match other list items */
-.navbar-items li.dropdown {
-  display: inline-block; /* Keep the same display style */
-  margin-right: 10px; /* Keep the same margin */
+.dropdown .dropdown-text:hover {
+  color: #333138;
 }
 
-/* Style the "dropdown" anchor link */
-.navbar-items li.dropdown a {
-  text-decoration: none;
-  color: #333; /* Use the same color as other items */
-  padding: 10px 20px; /* Use the same padding as other items */
-  border: 1px solid #ccc; /* Use the same border as other items */
-  border-radius: 5px;
+.dropdown .dropdown-text {
+  color: #333138;
 }
 
-/* Style for hover state on "dropdown" anchor link */
-.navbar-items li.dropdown a:hover {
-  background-color: #ccc; /* Use the same hover background color as other items */
+.dropdown .category {
+  color: #333138;
 }
 
-/* Style for active state on "dropdown" anchor link */
-.navbar-items li.dropdown.current-menu-item a {
-  background-color: #333; /* Use the same active background color as other items */
-  color: #fff; /* Use the same active text color as other items */
+.sign-in {
+  border: 2px solid #0081c9;
+  border-radius: 10px;
+  background-color: #0081c9;
+  color: #ffff;
+}
+
+.sign-in:hover {
+  background-color: #f1f6f5;
+  border: 0px;
+  color: #0081c9;
 }

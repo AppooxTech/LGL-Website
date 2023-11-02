@@ -1,19 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Center the footer content */
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  gap: 150px;
 }
 
 /* Style the contact and location sections */
 .contact-info {
-  display: flex;
+  display: block;
   flex-direction: row;
-}
-
-.contact-section,
-.location-section {
-  margin: 10px;
 }
 
 /* Style the LinkedIn link */
@@ -39,4 +44,17 @@
 .powered-by {
   text-align: center;
   font-size: 20px;
+}
+
+.phone-number {
+  display: block;
+}
+
+.sub-info {
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+strong {
+  font-size: 30px;
 }
