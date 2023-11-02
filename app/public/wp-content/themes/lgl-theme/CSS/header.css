@@ -119,3 +119,12 @@
   border: 0px;
   color: #0081c9;
 }
+
+.product-container {
+  display: flex;
+  gap: 5px;
+}
+
+.dropdown-icon {
+  margin-top: 6px;
+}
