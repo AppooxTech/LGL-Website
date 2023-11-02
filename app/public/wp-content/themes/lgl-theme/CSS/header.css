@@ -13,7 +13,7 @@
   background-color: #f1f6f5;
   display: flex;
   justify-content: space-between; /*Distribute items to the left and right */
-  padding: 10px;
+  /* padding: 10px; */
   position: fixed;
   width: 100%;
 }
@@ -26,6 +26,12 @@
   margin-right: 20px;
   margin-left: 20px;
   gap: 30px;
+}
+
+.navbar > a > img {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .blog-products {

@@ -13,7 +13,7 @@
     <nav class="header-navbar">
         <div class="navbar">
             <a href="<?php echo site_url() ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/LGL-Logo-removebg.png" alt="Business Logo">
+                <img width="150" height="100" src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" alt="Business Logo">
             </a>
             
             <div class="blog-products">
