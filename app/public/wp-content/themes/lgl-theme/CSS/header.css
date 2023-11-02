@@ -25,7 +25,7 @@
   font-family: "Source Sans 3", sans-serif;
   margin-right: 20px;
   margin-left: 20px;
-  gap: 30px;
+  gap: 60px;
 }
 
 .navbar > a > img {
@@ -38,7 +38,7 @@
   margin-left: 20px; /* Add margin between the logo and blog/products */
   display: flex;
   align-items: center; /* Vertically center items */
-  gap: 30px;
+  gap: 60px;
 }
 
 /* Rest of your existing CSS for the dropdown menu and navbar items */
@@ -81,7 +81,6 @@
 .contact-us {
   text-decoration: none;
   color: #333138; /* Change the color as desired */
-  padding: 10px 20px; /* Adjust padding for each item */
   /*border: 1px solid #60656f;  Add borders or other styling as needed */
   border-radius: 5px;
   font-size: 30px;
@@ -105,6 +104,10 @@
   color: #333138;
 }
 
+.item {
+  font-weight: normal;
+}
+
 .dropdown .dropdown-text {
   color: #333138;
 }
@@ -115,14 +118,17 @@
 
 .sign-in {
   border: 2px solid #0081c9;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #0081c9;
   color: #ffff;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  padding: 10px 30px;
 }
 
 .sign-in:hover {
   background-color: #f1f6f5;
-  border: 0px;
+  border: 3px solid #0081c9;
   color: #0081c9;
 }
 
@@ -133,4 +139,8 @@
 
 .dropdown-icon {
   margin-top: 6px;
+}
+
+.navbar-item {
+  font-weight: bold;
 }
