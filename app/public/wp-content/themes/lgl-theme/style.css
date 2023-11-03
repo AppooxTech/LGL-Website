@@ -3,3 +3,13 @@ Theme Name: lgl-theme
 Author: Ramin
 Version: 0.1
 */
+:root {
+    --light:#f7f7ff;
+    --light-grey:#60656f;
+    --grey:#333138;
+    --dark-grey:#131112;
+    --dark:#000103;
+    --primary:#279af1;
+    --secondary:#ff312e;
+    --tretary:#c49991;
+}
