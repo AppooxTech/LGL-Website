@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3:wght@300&display=swap");
+
+/* Global Items */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+strong {
+  font-size: 45px;
+}
+
+/* All css for the container of the footer and the contents besides the powered-by sectoin */
+.footer-container {
+  background-color: #272829;
+}
+
+/* Center the footer content */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  gap: 150px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Style the contact and location sections */
+.contact-info {
+  display: block;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.location-section {
+  margin-top: 20px;
+}
+
+/* Style the LinkedIn link */
+.logo-section a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.logo-section a:hover {
+  text-decoration: underline;
+}
+
+/* Style the business logo */
+.logo-section img {
+  display: block;
+  width: 200px; /* Adjust the size as needed */
+  margin-top: 40px;
+}
+
+/* Style the "Powered by" section */
+.powered-by {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: bold;
+}
+
+.phone-number {
+  display: block;
+}
+
+.sub-info {
+  font-size: 30px;
+  margin-top: 18px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.contact-icon {
+  margin-right: 8px;
+}
