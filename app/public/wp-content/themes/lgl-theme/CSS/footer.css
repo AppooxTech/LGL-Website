@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3:wght@300&display=swap");
 
+/* Global Items */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,6 +12,11 @@ a {
   color: #fff;
 }
 
+strong {
+  font-size: 45px;
+}
+
+/* All css for the container of the footer and the contents besides the powered-by sectoin */
 .footer-container {
   background-color: #272829;
 }
@@ -80,8 +86,4 @@ a {
 
 .contact-icon {
   margin-right: 8px;
-}
-
-strong {
-  font-size: 45px;
 }
