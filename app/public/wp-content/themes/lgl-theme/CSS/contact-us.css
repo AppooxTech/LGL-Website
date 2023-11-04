@@ -32,9 +32,12 @@ button:hover {
 /* main {
   background-image: url("/images/spectral-camera.jpg");
 } */
-
-.contact-us-container {
+main {
   background-image: url("/images/spectral-camera.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-us-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,10 +52,10 @@ button:hover {
   padding: 20px;
   padding-top: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .page-title {
   margin-bottom: 20px;
-  width: 100%;
+  text-align: center;
 }
