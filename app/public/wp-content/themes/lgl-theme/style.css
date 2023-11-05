@@ -3,13 +3,44 @@ Theme Name: lgl-theme
 Author: Ramin
 Version: 0.1
 */
+
+/* header font */
+@import url("https://fonts.cdnfonts.com/css/right-swipe-personal-use");
+
+/* text font */
+@import url("https://fonts.cdnfonts.com/css/emmeline");
+
+/* custom font */
+@import url("https://fonts.cdnfonts.com/css/southing");
+
 :root {
-    --light:#f7f7ff;
-    --light-grey:#60656f;
-    --grey:#333138;
-    --dark-grey:#131112;
-    --dark:#000103;
-    --primary:#279af1;
-    --secondary:#ff312e;
-    --tretary:#c49991;
+  --light: #f7f7ff;
+  --light-grey: #60656f;
+  --grey: #333138;
+  --dark-grey: #131112;
+  --dark: #000103;
+  --primary: #279af1;
+  --secondary: #ff312e;
+  --tretary: #c49991;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p.header,
+span.header,
+button {
+  font-family: "Right Swipe Personal Use", sans-serif;
+}
+
+body,
+p,
+span {
+  font-family: "EMMELINE", sans-serif;
+}
+
+.custom-font {
+  font-family: "Southing", sans-serif;
 }
