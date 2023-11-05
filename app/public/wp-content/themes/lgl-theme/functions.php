@@ -6,7 +6,6 @@ function enqueue_front_page_css()
         wp_enqueue_style('front-page-style', get_template_directory_uri() . '/CSS/front-page.css');
     }
 }
-
 function enqueue_header_css()
 {
     wp_enqueue_style('header-style', get_template_directory_uri() . '/CSS/header.css');
@@ -59,3 +58,4 @@ add_action('wp_enqueue_scripts', 'add_global_css');
 add_action('wp_enqueue_scripts', 'enqueue_header_css');
 add_action('wp_enqueue_scripts', 'add_global_css');
 add_action( 'wp_enqueue_scripts', 'add_global_css' );
+
