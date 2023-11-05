@@ -1,11 +1,13 @@
-<?php 
+<?php
 
-function enqueue_front_page_css() {
+function enqueue_front_page_css()
+{
     if (is_front_page()) {
         wp_enqueue_style('front-page-style', get_template_directory_uri() . '/CSS/front-page.css');
     }
 }
-function custom_single_template($single_template) {
+function custom_single_template($single_template)
+{
     if (in_category('blog')) {
         // For posts in the "Blog" category, use single-blog.php
         return locate_template('single-blog.php');
@@ -19,7 +21,8 @@ function custom_single_template($single_template) {
     return $single_template; // For other posts, use the default single.php
 }
 
-function enqueue_specific_css() {
+function enqueue_specific_css()
+{
     if (is_page('products-page')) {
         wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/products.css');
     } elseif (is_page('blogs-page')) {
@@ -31,12 +34,12 @@ function enqueue_specific_css() {
     }
     // Add more conditions for other pages as needed
 }
-function add_global_css() {
-    wp_enqueue_style( 'global-css', get_template_directory_uri() . '/CSS/styles.css' );
-  }
-  
-  
-  add_filter('single_template', 'custom_single_template');
-  add_action('wp_enqueue_scripts', 'enqueue_specific_css');
-  add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
-  add_action( 'wp_enqueue_scripts', 'add_global_css' );
+function add_global_css()
+{
+    wp_enqueue_style('global-css', get_template_directory_uri() . './style.css');
+}
+
+add_filter('single_template', 'custom_single_template');
+add_action('wp_enqueue_scripts', 'enqueue_specific_css');
+add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
+add_action('wp_enqueue_scripts', 'add_global_css');
