@@ -1,0 +1,70 @@
+/* Global CSS items -- Need to be removed for buttons and textarea */
+
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* main {
+  background-image: url("/images/spectral-camera.jpg");
+} */
+
+body {
+  background-image: url("../images/contact-us-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.contact-us-form {
+  width: 400px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.page-title {
+  margin-bottom: 20px;
+  text-align: center;
+}

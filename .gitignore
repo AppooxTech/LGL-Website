@@ -1,0 +1,5 @@
+
+# Ignore the specific file app/sql/local.sql
+logs/
+conf/
+app/sql/local.sql

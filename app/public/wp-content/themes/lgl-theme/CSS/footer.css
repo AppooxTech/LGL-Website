@@ -30,7 +30,7 @@ strong {
   font-family: "Source Sans 3", sans-serif;
   gap: 150px;
   color: #fff;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Style the contact and location sections */
@@ -59,7 +59,7 @@ strong {
 /* Style the business logo */
 .logo-section img {
   display: block;
-  width: 200px; /* Adjust the size as needed */
+  /*width: 200px;  Adjust the size as needed */
   margin-top: 40px;
 }
 

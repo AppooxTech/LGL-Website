@@ -9,6 +9,8 @@
     </head>
 
     <body <?php body_class(); ?>>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <header>
     <nav class="header-navbar">
         <div class="navbar">
