@@ -1,1 +1,149 @@
 2023/11/01 15:32:47 [error] 3572#34420: *51 FastCGI sent in stderr: "PHP Warning:  Attempt to read property "title" on null in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-customize-widgets.php on line 905" while reading upstream, client: 127.0.0.1, server: , request: "GET /wp-admin/customize.php?theme=lgl-theme&return=http%3A%2F%2Flgl-website.local%2Fwp-admin%2Fthemes.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/wp-admin/themes.php"
+2023/11/06 15:40:24 [error] 32700#28596: *678 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:40:25 [error] 32700#28596: *680 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:40:30 [error] 32700#28596: *682 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:07 [error] 32700#28596: *694 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:07 [error] 32700#28596: *696 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:07 [error] 32700#28596: *698 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:08 [error] 32700#28596: *700 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:08 [error] 32700#28596: *702 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:09 [error] 32700#28596: *704 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:09 [error] 32700#28596: *706 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:10 [error] 32700#28596: *708 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:11 [error] 32700#28596: *710 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:41:31 [error] 32700#28596: *712 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:26 [error] 32700#28596: *740 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:28 [error] 32700#28596: *742 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:29 [error] 32700#28596: *744 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:29 [error] 32700#28596: *746 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:29 [error] 32700#28596: *748 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:29 [error] 32700#28596: *750 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:44:29 [error] 32700#28596: *752 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:16 [error] 32700#28596: *769 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:17 [error] 32700#28596: *771 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:17 [error] 32700#28596: *773 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:17 [error] 32700#28596: *775 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:17 [error] 32700#28596: *777 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:17 [error] 32700#28596: *779 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:18 [error] 32700#28596: *781 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:18 [error] 32700#28596: *783 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:19 [error] 32700#28596: *785 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:19 [error] 32700#28596: *787 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:19 [error] 32700#28596: *789 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:19 [error] 32700#28596: *791 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:19 [error] 32700#28596: *793 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:20 [error] 32700#28596: *795 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:21 [error] 32700#28596: *797 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:21 [error] 32700#28596: *799 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/06 15:46:21 [error] 32700#28596: *801 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php:4
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
