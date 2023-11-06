@@ -27,20 +27,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
     try {
         // Server settings
-        $mail->SMTPDebug = 0; // Set to 2 for debugging
+        $mail->SMTPDebug = 0; // Can be set to 2 for debugging
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'codenotion.dev@gmail.com'; // THIS EMAIL NEEDS TO CHANGE
         $mail->Password = 'RaminKurosh2023!!'; // THIS PASSWORD NEEDS TO CHANGE
-        $mail->SMTPSecure = 'tls'; // Enable TLS encryption
+        $mail->SMTPSecure = 'tls'; // To enable TLS encryption
         $mail->Port = 587;
 
         // Sender info
-        $mail->setFrom('your_email@gmail.com', 'Your Name'); // Change 'Your Name'
+        $mail->setFrom('your_email@gmail.com', 'Your Name'); // "Your Name" should be changed
 
         // Recipient
-        $mail->addAddress('your_email@gmail.com'); // Send email to your Gmail
+        $mail->addAddress('your_email@gmail.com'); // "send gmail should be aimed at my account"
 
         // Email content
         $mail->isHTML(false);
