@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'codenotion.dev@gmail.com'; // Your Gmail email
-        $mail->Password = 'RaminKurosh2023!!'; // Your Gmail password
+        $mail->Username = 'codenotion.dev@gmail.com'; // THIS EMAIL NEEDS TO CHANGE
+        $mail->Password = 'RaminKurosh2023!!'; // THIS PASSWORD NEEDS TO CHANGE
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption
         $mail->Port = 587;
 
