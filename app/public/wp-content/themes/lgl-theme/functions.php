@@ -42,7 +42,7 @@ function enqueue_specific_css()
         wp_enqueue_style('blogs-styles', get_template_directory_uri() . '/CSS/blog.css');
     } elseif (is_page('software-page')) {
         wp_enqueue_style('software-styles', get_template_directory_uri() . '/CSS/software.css');
-    } elseif (is_page('contact-us')) {
+    } elseif (is_page('contact-us-page')) {
         wp_enqueue_style('contact-us-styles', get_template_directory_uri() . '/CSS/contact-us.css');
     }
     // Add more conditions for other pages as needed
