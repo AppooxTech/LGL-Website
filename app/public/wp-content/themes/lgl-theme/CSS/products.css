@@ -1,0 +1,10 @@
+.section-intro {
+  display: block;
+  align-items: center;
+}
+
+.main-image {
+  width: 100rem;
+  height: 500px;
+  margin: 20px 50px;
+}

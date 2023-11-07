@@ -43,7 +43,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			<a href="contribute.php" class="nav-tab"><?php _e( 'Get Involved' ); ?></a>
 		</nav>
 
-		<div class="about__section changelog has-subtle-background-color">
+		<div class="about__section">
 			<div class="column">
 				<h2><?php _e( 'Maintenance Release' ); ?></h2>
 				<p>
