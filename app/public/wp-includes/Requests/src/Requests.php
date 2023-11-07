@@ -150,6 +150,7 @@ class Requests {
 	 */
 	const VERSION = '2.0.9';
 
+
 	/**
 	 * Selected transport name
 	 *

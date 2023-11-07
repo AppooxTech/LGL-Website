@@ -703,7 +703,7 @@ CREATE TABLE `wp_term_taxonomy` (
 
 LOCK TABLES `wp_term_taxonomy` WRITE;
 /*!40000 ALTER TABLE `wp_term_taxonomy` DISABLE KEYS */;
-INSERT INTO `wp_term_taxonomy` VALUES (1,1,'category','',0,1);
+INSERT INTO `wp_term_taxonomy` VALUES (1,1,'category','',0,2);
 INSERT INTO `wp_term_taxonomy` VALUES (2,2,'wp_theme','',0,1);
 INSERT INTO `wp_term_taxonomy` VALUES (3,3,'category','',0,2);
 INSERT INTO `wp_term_taxonomy` VALUES (4,4,'category','',0,5);
@@ -875,6 +875,7 @@ UNLOCK TABLES;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Dump completed on 2023-11-07 22:34:06
 =======
 -- Dump completed on 2023-11-14 18:59:37
@@ -903,3 +904,6 @@ UNLOCK TABLES;
 =======
 -- Dump completed on 2023-11-06 18:26:42
 >>>>>>> ff4b1c7 (Setting up product tempelate on wordpress)
+=======
+-- Dump completed on 2023-11-07 19:21:50
+>>>>>>> 5e3f347 (Working on Products page, and new wordpress update)

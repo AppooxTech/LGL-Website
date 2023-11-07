@@ -196,6 +196,7 @@ if ( isset( $_GET['a'] ) ) {
 		array(
 			'id'                 => 'message',
 			'dismissible'        => true,
+			'is-dismissible'     => true,
 			'additional_classes' => array( 'updated' ),
 		)
 	);
