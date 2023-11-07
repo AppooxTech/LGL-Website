@@ -874,6 +874,7 @@ UNLOCK TABLES;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Dump completed on 2023-11-07 22:34:06
 =======
 -- Dump completed on 2023-11-14 18:59:37
@@ -899,3 +900,6 @@ UNLOCK TABLES;
 =======
 -- Dump completed on 2023-11-26  8:05:41
 >>>>>>> 6bc9cc6 (changes)
+=======
+-- Dump completed on 2023-11-06 18:26:42
+>>>>>>> ff4b1c7 (Setting up product tempelate on wordpress)
