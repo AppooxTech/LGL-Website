@@ -1,25 +1,28 @@
 <?php
 $place_holder = 'place holder';
 $type = 'input';
+$half_size = true;
 
 if (isset($args)) {
-    if (isset($args['place_holder'])){
+    if (isset($args['place_holder'])) {
         $place_holder = $args['place_holder'];
     }
-    
     if (isset($args['type'])) {
         $type = $args['type'];
+    }
+    if (isset($args['half_size'])) {
+        $half_size = $args['half_size'];
     }
 }
 ?>
 
 <?php if ($type === 'search') : ?>
-    <div class="container input">
+    <div class="container input <?php echo $half_size ? "half" : "full"; ?>">
         <input id="custom-input" style="width: 90%;" onfocus="on_focus()" onblur="on_blur()" placeholder="<?php echo $place_holder ?>" type="input">
-        <img src="../../images/icons/icons8-search-50.png" alt="search-icon" width="50" role="button">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icons8-search-50.png" alt="search-icon" width="30" role="button">
     </div>
 <?php elseif ($type === 'input') : ?>
-    <div class="input container">
+    <div class="input container <?php echo $half_size ? "half" : "full"; ?>">
         <input id="custom-input" onfocus="on_focus()" onblur="on_blur()" placeholder="<?php echo $place_holder ?>" type="input">
     </div>
 <?php elseif ($type === 'textarea') : ?>
@@ -42,7 +45,7 @@ if (isset($args)) {
 <style>
     div.container {
         display: flex;
-        transition: all 100ms linear;
+        transition: all 150ms linear;
         padding-left: 12px;
         max-width: 400px;
         min-width: 200px;
@@ -52,6 +55,14 @@ if (isset($args)) {
     div.input {
         height: 50px;
         align-items: center;
+    }
+
+    div.full {
+        width: 400px;
+    }
+
+    div.half {
+        width: 200px;
     }
 
     div.textarea {
