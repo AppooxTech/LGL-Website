@@ -19,7 +19,8 @@ p {
 .root-container {
   display: flex;
   flex-direction: column;
-  gap: 14vh;
+  gap: 15vh;
+  margin-bottom: 15vh;
 }
 
 .main-img-container {
@@ -30,7 +31,7 @@ p {
 }
 
 .product-description {
-  padding: 50px 80px;
+  padding: 50px 150px;
   font-size: 32px;
   text-align: justify;
 }
