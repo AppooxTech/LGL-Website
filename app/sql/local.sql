@@ -658,7 +658,8 @@ LOCK TABLES `wp_term_relationships` WRITE;
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
 INSERT INTO `wp_term_relationships` VALUES (1,1,0);
 INSERT INTO `wp_term_relationships` VALUES (6,2,0);
-INSERT INTO `wp_term_relationships` VALUES (21,3,0);
+
+SERT INTO `wp_term_relationships` VALUES (21,3,0);
 INSERT INTO `wp_term_relationships` VALUES (55,4,0);
 INSERT INTO `wp_term_relationships` VALUES (55,5,0);
 INSERT INTO `wp_term_relationships` VALUES (55,6,0);
@@ -694,7 +695,7 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -865,45 +866,4 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 -- Dump completed on 2023-11-07 22:34:06
-=======
--- Dump completed on 2023-11-14 18:59:37
->>>>>>> 4034484 (Initializing blog page)
-=======
--- Dump completed on 2023-11-16 18:11:58
->>>>>>> bb1ebcd (Developing blog page)
-=======
--- Dump completed on 2023-11-16 21:16:57
->>>>>>> fc9c6cc (Updating blog view)
-=======
--- Dump completed on 2023-11-17 22:08:05
->>>>>>> 99c86ab (Adding further styling to the blog view page)
-=======
--- Dump completed on 2023-11-25  3:01:13
->>>>>>> 04c5178 (Updating blog)
-=======
--- Dump completed on 2023-11-25 23:31:13
->>>>>>> f4460ee (blog complete and work on product page started)
-=======
--- Dump completed on 2023-11-26  3:15:23
->>>>>>> 5a8d795 (fixing css assignment for blog view page)
-=======
--- Dump completed on 2023-11-26  8:05:41
->>>>>>> 6bc9cc6 (changes)
-=======
--- Dump completed on 2023-11-06 18:26:42
->>>>>>> ff4b1c7 (Setting up product tempelate on wordpress)
-=======
--- Dump completed on 2023-11-07 19:21:50
->>>>>>> 5e3f347 (Working on Products page, and new wordpress update)
