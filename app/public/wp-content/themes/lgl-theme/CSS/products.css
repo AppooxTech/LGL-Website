@@ -19,6 +19,7 @@ p {
 .root-container {
   display: flex;
   flex-direction: column;
+  gap: 14vh;
 }
 
 .main-img-container {
@@ -51,16 +52,17 @@ p {
 
 .even-section,
 .odd-section {
-  margin: 0 20px;
+  margin: 0 80px;
 }
 
 .even-section-img,
 .odd-section-img {
-  width: 50vw;
+  width: 45vw;
 }
 
 .even-section-text,
 .odd-section-text {
   text-align: justify;
+  width: 45vw;
   font-size: 35px;
 }
