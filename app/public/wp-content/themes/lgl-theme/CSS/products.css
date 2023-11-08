@@ -62,9 +62,6 @@ p {
 .even-section,
 .odd-section {
   margin: 0 80px;
-}
-
-.even-section-img,
 .odd-section-img {
   flex-basis: 40vw;
 }
