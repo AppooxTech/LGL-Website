@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+/* -------- PAGE CSS -------- */
+p {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+
 /* -------- INTRO SECTION -------- */
 .section-intro {
   display: block;
@@ -18,4 +26,41 @@
   /* padding: 20px 50px; */
   /* display: block; */
   text-align: center;
+}
+
+.product-description {
+  padding: 50px 80px;
+  font-size: 32px;
+  text-align: justify;
+}
+
+/* -------- ALL SECTIONS -------- */
+
+.even-section,
+.odd-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.text-div {
+  display: flex;
+  align-items: center; /* Vertical alignment: center */
+  justify-content: center; /* Horizontal alignment: center */
+}
+
+.even-section,
+.odd-section {
+  margin: 0 20px;
+}
+
+.even-section-img,
+.odd-section-img {
+  width: 50vw;
+}
+
+.even-section-text,
+.odd-section-text {
+  text-align: justify;
+  font-size: 35px;
 }
