@@ -1,10 +1,21 @@
+/* -------- INTRO SECTION -------- */
 .section-intro {
   display: block;
   align-items: center;
 }
 
 .main-image {
-  width: 100rem;
-  height: 500px;
-  margin: 20px 50px;
+  height: 100vh;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-img-container {
+  /* margin-top: 40px; */
+  /* padding: 20px 50px; */
+  /* display: block; */
+  text-align: center;
 }
