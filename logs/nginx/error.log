@@ -147,3 +147,4 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
+2023/11/08 22:29:00 [error] 32920#27460: *58 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\tempelate-contact-us.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /contact-us-page/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"

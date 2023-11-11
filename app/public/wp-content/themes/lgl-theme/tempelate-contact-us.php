@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
 <main class="contact-us-container">
     <section>
-        <form class="contact-us-form" method="post" action="<?php echo esc_url( home_url( '/contact-us-page/' ) ); ?>">>
+        <form class="contact-us-form" method="post" action="<?php echo esc_url( home_url() ); ?>">>
             <h1 class="page-title">Contact Us</h1>
 
             <div class="name-section">
