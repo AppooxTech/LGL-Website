@@ -1,1 +1,11 @@
-<h2>Blogs page</h2>
+
+<?php
+    get_header();
+ ?>
+    
+    
+    <?php the_content(); ?>
+
+<?php
+    get_footer();
+ ?>

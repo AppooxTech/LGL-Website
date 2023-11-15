@@ -37,11 +37,15 @@ function enqueue_specific_css()
     if (is_page('products-page')) {
         wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/products.css');
     } elseif (is_page('blogs-page')) {
-        wp_enqueue_style('blogs-styles', get_template_directory_uri() . '/CSS/blog.css');
+        wp_enqueue_style('blogs-styles', get_template_directory_uri() . '/CSS/blog-list.css');
     } elseif (is_page('software-page')) {
         wp_enqueue_style('software-styles', get_template_directory_uri() . '/CSS/software.css');
     } elseif (is_page('contact-us-page')) {
         wp_enqueue_style('contact-us-styles', get_template_directory_uri() . '/CSS/contact-us.css');
+    }
+
+    if(in_category('blog')) {
+        wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/blog-view.css');
     }
     // Add more conditions for other pages as needed
 }
