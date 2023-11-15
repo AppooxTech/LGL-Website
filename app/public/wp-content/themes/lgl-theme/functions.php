@@ -11,7 +11,6 @@ function enqueue_header_css()
     wp_enqueue_style('header-style', get_template_directory_uri() . '/CSS/header.css');
 }
 
-
 function enqueue_footer_css()
 {
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/CSS/footer.css');
