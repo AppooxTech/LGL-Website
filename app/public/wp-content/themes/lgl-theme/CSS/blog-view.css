@@ -2,11 +2,25 @@
   color: red;
 }
 
+.blog-topic {
+  height: 25vh;
+  background-color: #3c3b3d;
+  padding: 2em 5em;
+  color: #f7f7ff;
+  display: flex;
+}
+
+.blog-topic > h1 {
+  font-size: 50px;
+}
+
 .intro-text {
-  color: red;
-  margin-top: 20vh;
+  /* 
+  padding: 0 50px;
+  background-color: #3c3b3d;
+  height: 25vh; */
 }
 
 .container {
-  padding: 0 50px;
+  padding-top: 27vh;
 }
