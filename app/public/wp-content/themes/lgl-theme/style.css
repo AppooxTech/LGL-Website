@@ -35,6 +35,11 @@ button {
   font-family: "Right Swipe Personal Use", sans-serif;
 }
 
+body {
+  padding: 0px;
+  margin: 0px !important;
+}
+
 body,
 p,
 span {
