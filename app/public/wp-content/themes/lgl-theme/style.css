@@ -54,7 +54,8 @@ body,header {
   margin: 0px !important;
 }
 
-body {
+body,header {
+  max-width: 100vw;
   padding: 0px;
   margin: 0px !important;
 }
