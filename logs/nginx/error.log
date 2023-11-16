@@ -148,3 +148,11 @@ Stack trace:
 #0 {main}
   thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\contact-form.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-content/themes/lgl-theme/contact-form.php HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local", referrer: "http://lgl-website.local/contact-us-page/"
 2023/11/08 22:29:00 [error] 32920#27460: *58 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\tempelate-contact-us.php on line 62" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /contact-us-page/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"
+2023/11/15 16:36:42 [error] 20256#22816: *919 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function get_the_post() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:8
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 8" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/15 20:48:26 [error] 1468#8424: *142 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token "<" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
