@@ -61,6 +61,7 @@
                     <?php get_template_part("components/button","",['button_txt'=>'sign in']); ?>
                 </div>
             </div>
+
         </nav>
 
     </header>
