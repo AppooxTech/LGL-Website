@@ -108,3 +108,166 @@ Stack trace:
 #2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
 #3 {main}
   thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 8" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/07 14:11:52 [error] 2208#17656: *12 FastCGI sent in stderr: "PHP Warning:  Array to string conversion in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\general-template.php on line 185" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/07 14:11:52 [error] 2208#17656: *16 FastCGI sent in stderr: "PHP Warning:  Array to string conversion in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\general-template.php on line 185" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:37:58 [error] 26260#4916: *12 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:37:58 [error] 26260#4916: *16 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:38:20 [error] 26260#4916: *35 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
+2023/11/11 01:38:34 [error] 26260#4916: *47 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
+2023/11/11 01:38:43 [error] 26260#4916: *59 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
+2023/11/11 01:38:48 [error] 26260#4916: *69 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
+2023/11/11 01:39:07 [error] 26260#4916: *79 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
+2023/11/11 01:39:24 [error] 26260#4916: *87 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:39:34 [error] 26260#4916: *97 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:39:36 [error] 26260#4916: *107 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:39:45 [error] 26260#4916: *117 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:39:59 [error] 26260#4916: *127 FastCGI sent in stderr: "PHP Warning:  Undefined variable $hyspim in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 10" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:40:49 [error] 26260#4916: *139 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:46:01 [error] 26260#4916: *149 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:46:40 [error] 26260#4916: *166 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:6
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 6" while reading upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:46:46 [error] 26260#4916: *178 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:4
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:46:54 [error] 26260#4916: *183 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:4
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:48:47 [error] 26260#4916: *188 FastCGI sent in stderr: "PHP Warning:  require(./components/carousel.php): Failed to open stream: No such file or directory in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Fatal error:  Uncaught Error: Failed opening required './components/carousel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:4
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:49:08 [error] 26260#4916: *193 FastCGI sent in stderr: "PHP Warning:  require(./components/carousel): Failed to open stream: No such file or directory in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Fatal error:  Uncaught Error: Failed opening required './components/carousel' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:4
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:49:14 [error] 26260#4916: *198 FastCGI sent in stderr: "PHP Warning:  require(./components/carousel.php): Failed to open stream: No such file or directory in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Fatal error:  Uncaught Error: Failed opening required './components/carousel.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:4
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:51:58 [error] 26260#4916: *203 FastCGI sent in stderr: "PHP Warning:  include(./components/carousel.php): Failed to open stream: No such file or directory in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Warning:  include(): Failed opening './components/carousel.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:5
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:52:48 [error] 26260#4916: *208 FastCGI sent in stderr: "PHP Warning:  include(../lgl-theme/components/carousel.php): Failed to open stream: No such file or directory in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Warning:  include(): Failed opening '../lgl-theme/components/carousel.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 4
+PHP Fatal error:  Uncaught Error: Class "content" not found in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php:5
+Stack trace:
+#0 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\kurosh...')
+#2 C:\Users\kurosh\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\kurosh...')
+#3 {main}
+  thrown in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 5" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:53:05 [error] 26260#4916: *213 FastCGI sent in stderr: "PHP Fatal error:  Cannot declare class content, because the name is already in use in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\components\carousel.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:54:49 [error] 26260#4916: *219 FastCGI sent in stderr: "PHP Fatal error:  Cannot declare class content, because the name is already in use in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\components\carousel.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:55:14 [error] 26260#4916: *225 FastCGI sent in stderr: "PHP Warning:  Undefined variable $hyspim in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\front-page.php on line 16
+PHP Fatal error:  Cannot declare class content, because the name is already in use in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\components\carousel.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/11 01:55:30 [error] 26260#4916: *231 FastCGI sent in stderr: "PHP Fatal error:  Cannot declare class content, because the name is already in use in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\components\carousel.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10009", host: "lgl-website.local"
+2023/11/12 12:47:12 [error] 14772#11148: *1 FastCGI sent in stderr: "PHP Fatal error:  Cannot declare class content, because the name is already in use in C:\Users\kurosh\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\components\carousel.php on line 2" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10008", host: "lgl-website.local"
