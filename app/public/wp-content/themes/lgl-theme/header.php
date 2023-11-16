@@ -57,8 +57,9 @@
                 </div>
             </div>
             <div class="navbar">
-                <a class="navbar-item sign-in" href="#">Sign In</a>
-
+                <div class="sign-in">
+                    <?php get_template_part("components/button","",['button_txt'=>'sign in']); ?>
+                </div>
             </div>
         </nav>
 
