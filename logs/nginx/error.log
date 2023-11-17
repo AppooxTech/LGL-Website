@@ -156,3 +156,35 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 8" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
 2023/11/15 20:48:26 [error] 1468#8424: *142 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token "<" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 19:12:20 [error] 19920#25204: *605 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function get_topic() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:10
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 10" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"
+2023/11/16 20:22:31 [error] 19920#25204: *1154 FastCGI sent in stderr: "PHP Warning:  Array to string conversion in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 20" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 20:22:47 [error] 19920#25204: *1169 FastCGI sent in stderr: "PHP Warning:  Array to string conversion in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 20" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 20:23:34 [error] 19920#25204: *1179 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 24" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"
+2023/11/16 20:23:41 [error] 19920#25204: *1181 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:23
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 20:27:07 [error] 19920#25204: *1189 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"
+2023/11/16 20:27:09 [error] 19920#25204: *1191 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 25" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 20:39:04 [error] 19920#25204: *1226 FastCGI sent in stderr: "PHP Warning:  Undefined variable $tags_count in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+PHP Warning:  Undefined variable $index in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+PHP Warning:  Undefined variable $tags_count in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+PHP Warning:  Undefined variable $index in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10015", host: "lgl-website.local"
+2023/11/16 20:39:40 [error] 19920#25204: *1239 FastCGI sent in stderr: "PHP Warning:  Undefined variable $tags_count in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+PHP Warning:  Undefined variable $tags_count in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"
+2023/11/16 20:47:48 [error] 19920#25204: *1302 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function get_author() in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:12
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 12" while reading upstream, client: 127.0.0.1, server: , request: "GET /blog-one/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10014", host: "lgl-website.local"

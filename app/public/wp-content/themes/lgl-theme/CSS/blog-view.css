@@ -1,26 +1,58 @@
+/* OVERALL CSS DIVS */
+
 .blog-text {
   color: red;
 }
 
+.container {
+  padding-top: 18vh;
+}
+
+/* TOPIC SECTION */
+
 .blog-topic {
-  height: 25vh;
-  background-color: #3c3b3d;
+  height: 200px;
+  background-color: #a3a3a3;
   padding: 2em 5em;
   color: #f7f7ff;
+
   display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .blog-topic > h1 {
-  font-size: 50px;
+  font-size: 5rem;
+  border-left: 0.1em solid rgb(86, 0, 0);
+  padding-left: 5px;
 }
+
+.sub-topic-info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-size: 1.5rem;
+}
+
+/* BLOG BODY SECTION */
 
 .intro-text {
-  /* 
-  padding: 0 50px;
-  background-color: #3c3b3d;
-  height: 25vh; */
 }
 
-.container {
-  padding-top: 27vh;
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.related-blogs {
+  background-color: aqua;
+
+  height: 400px;
 }
