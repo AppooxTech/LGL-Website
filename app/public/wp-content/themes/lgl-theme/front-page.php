@@ -11,7 +11,17 @@
     </div>
     <div class="aboutus-container">
         <h1 class="aboutus">Our mission is to turn your idea into reality</h1>
-        <p class="aboutus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?</p>
+        <p class="aboutus">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
+            voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
+            voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
+            voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
+            voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?
+        </p>
     </div>
     <div class="services-container">
         <article class="services">
