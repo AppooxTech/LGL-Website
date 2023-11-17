@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300&family=Source+Sans+3:wght@300&display=swap");
+
 /* OVERALL CSS DIVS */
 
 .blog-text {
@@ -5,7 +7,7 @@
 }
 
 .container {
-  padding-top: 18vh;
+  padding-top: 155px;
 }
 
 /* TOPIC SECTION */
@@ -37,22 +39,28 @@
 /* BLOG BODY SECTION */
 
 .intro-text {
+  font-family: "Libre Baskerville", serif;
+  text-align: justify;
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  flex-basis: 70vw;
 }
 
 .blog-body {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  margin: 0 5em;
+  justify-content: center;
 }
 
 .related-blogs {
   background-color: aqua;
 
   height: 400px;
+  flex-basis: 20vw;
 }
