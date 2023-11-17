@@ -11,7 +11,7 @@
     </div>
     <div class="aboutus-container">
         <h1 class="aboutus">Our mission is to turn your idea into reality</h1>
-        <p class="aboutus" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?</p>
+        <p class="aboutus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit, voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?</p>
     </div>
     <div class="services-container">
         <article class="services">
@@ -65,25 +65,28 @@
 
     div.carousel-container {
         width: 100%;
-        height: 900px;
+        height: 700px;
         text-align: center;
         color: var(--dark);
         text-align: center;
         display: flex;
         justify-content: center;
+        justify-items: center;
 
     }
 
     div.aboutus-container {
-        height: 500px;
+        min-height: 500px;
         width: 100vw;
         display: flex;
         flex-direction: column;
         border-top: solid 3px var(--dark);
-        background-color: var(--secondary);
+        background-image: url('<?php echo get_template_directory_uri() ?>/images/abstract2.jpg');
+        background-size: cover;
         padding-left: 15%;
         padding-right: 15%;
         gap: 12px;
+
     }
 
     h1.aboutus {
@@ -95,6 +98,7 @@
 
     p.aboutus {
         font-size: 1.8vw;
+        color: var(--light);
     }
 
     div.services-container {
@@ -109,13 +113,14 @@
         justify-content: center;
         align-items: center;
         border-top: solid 3px var(--dark);
-        background-color: var(--primary);
+        background-image: url('<?php echo get_template_directory_uri(); ?>/images/abstract1.jpg');
+        background-size: cover;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     article.services {
-        color: var(--dark);
+        color: var(--light);
     }
 
     section.services-first {
@@ -135,7 +140,7 @@
         font-weight: 500;
         text-align: left;
         text-indent: 5px;
-        color: var(--dark-grey);
+        color: var(--light);
     }
 
     h2.services {
