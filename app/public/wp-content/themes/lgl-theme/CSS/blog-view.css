@@ -36,31 +36,72 @@
   font-size: 1.5rem;
 }
 
-/* BLOG BODY SECTION */
-
-.intro-text {
-  font-family: "Libre Baskerville", serif;
-  text-align: justify;
-}
+/* BLOG BODY Containers */
 
 .content-container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
   flex-basis: 70vw;
+}
+
+/* Blog Body */
+
+.intro-text,
+.body-text {
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* text-align: justify; */
+  font-size: 1.2rem;
+  padding: 0 16vw;
+
+  word-spacing: 5px;
 }
 
 .blog-body {
   display: flex;
   flex-direction: row;
-  gap: 1em;
-  margin: 0 5em;
+  gap: 2em;
+  margin: 2em 5em;
+  /* margin-right: 8em;
+  margin-left: 2em; */
   justify-content: center;
 }
+
+.blog-img > img {
+  width: 35vw;
+}
+
+.blog-img {
+  text-align: center;
+  margin-bottom: -1.5em;
+}
+
+.image-text {
+  padding: 0 18vw;
+}
+
+/* Related Blogs */
 
 .related-blogs {
   background-color: aqua;
 
   height: 400px;
-  flex-basis: 20vw;
+  flex-basis: 25vw;
+}
+
+/* References */
+
+.reference-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 16vw;
+  margin-bottom: -1em;
+}
+
+.reference-item {
+  font-style: italic;
+  padding: 0 16vw;
+  margin-bottom: -1em;
 }
