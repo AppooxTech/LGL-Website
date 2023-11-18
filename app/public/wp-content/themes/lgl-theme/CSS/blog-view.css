@@ -66,6 +66,20 @@
   color: black;
 }
 
+/* Blog Body */
+
+.intro-text,
+.body-text {
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* text-align: justify; */
+  font-size: 1.2rem;
+  padding: 0 16vw;
+
+  word-spacing: 5px;
+}
+
 .blog-body {
   display: flex;
   flex-direction: column;
@@ -120,6 +134,21 @@
   border-radius: 5px;
   /* padding: 20px; */
 }
+
+.blog-img > img {
+  width: 35vw;
+}
+
+.blog-img {
+  text-align: center;
+  margin-bottom: -1.5em;
+}
+
+.image-text {
+  padding: 0 18vw;
+}
+
+/* Related Blogs */
 
 .related-blogs {
   display: flex;
