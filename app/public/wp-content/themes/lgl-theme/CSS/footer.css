@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-a {
+.footer-container > a {
   text-decoration: none;
   color: #fff;
 }
