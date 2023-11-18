@@ -80,6 +80,13 @@
   word-spacing: 5px;
 }
 
+.body-text > a {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
 .blog-body {
   display: flex;
   flex-direction: column;
