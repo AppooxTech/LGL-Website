@@ -75,7 +75,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* text-align: justify; */
   font-size: 1.2rem;
-  padding: 0 16vw;
+  padding: 0 13vw;
 
   word-spacing: 5px;
 }
@@ -84,7 +84,6 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
-  border-bottom: 1px solid #000;
 }
 
 .blog-body {
@@ -148,11 +147,13 @@
 
 .blog-img {
   text-align: center;
-  margin-bottom: -1.5em;
+  margin-bottom: -1.7em;
 }
 
 .image-text {
-  padding: 0 18vw;
+  padding: 0 14vw;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Related Blogs */
