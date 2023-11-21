@@ -1,0 +1,55 @@
+div.carousel-container {
+    display: flex;
+    width: 50vw;
+    min-height: 100vh;
+    background-color: var(--light);
+    justify-content: stretch;
+}
+
+div.content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+}
+
+div.left-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 25px;
+    gap: 12px;
+}
+
+div.right-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+button.carousel-btn {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+div.content-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content-image {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
