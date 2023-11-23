@@ -1,15 +1,15 @@
 /* Custom Button Styles */
 button.custom-button {
     outline: 2px solid var(--dark);
-    border: 2px solid var(--dark);
-    border-radius: 10px;
+    border: 1.5px solid var(--dark);
+    border-radius: 3px;
     background-color: var(--light);
     text-align: center;
     color: var(--dark);
-    min-width: 150px;
-    min-height: 70px;
+    min-width: 50px;
+    min-height: 20px;
     transition: all 100ms linear;
-    font-size: x-large;
+    font-size: 1em;
     width: 100%;
     height: 100%;
 }
@@ -24,4 +24,5 @@ button.custom-button:hover {
 
 button.custom-button.clicked {
     border-width: 6px;
+    border-radius: 8px;
 }
