@@ -74,8 +74,8 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* text-align: justify; */
-  font-size: 1.2rem;
-  padding: 0 13vw;
+  font-size: 1.5rem;
+  padding: 0 20vw;
 
   word-spacing: 5px;
 }
@@ -151,9 +151,10 @@
 }
 
 .image-text {
-  padding: 0 14vw;
+  padding: 0 27vw;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* text-align: center; */
 }
 
 /* Related Blogs */
