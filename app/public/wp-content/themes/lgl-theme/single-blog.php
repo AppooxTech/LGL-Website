@@ -75,9 +75,22 @@
                     while ($related_blogs->have_posts()) {
                         $related_blogs->the_post();
                         if (get_the_title() != $topic){
+                            $counter = 1;
+                            $imageUrls_sub = [];
+                            preg_match_all('/<img src="([^"]*)" alt="([^"]*)" \/>/', $content, $matches_sub);
+                            foreach ($matches[1] as $imageUrl) {
+                                $imageUrl = '<img src="' . $imageUrl . '" alt="" />';
+                                array_push($imageUrls_sub, $imageUrl);
+                            }
                             ?>
                                 <div class="related-blogs">
                                     <h2><?php echo get_the_title(); ?></h2>
+                                    <?php
+                                        foreach ($imageUrls_sub as $imageUrl) {
+                                            echo $imageUrl;
+                                        }
+                                    
+                                    ?>
                                 </div>
                                 
                             <?php 
