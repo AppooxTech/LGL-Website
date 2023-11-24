@@ -42,6 +42,12 @@ button {
   font-family: "Lexend", sans-serif;
 }
 
+body {
+  width: min-content;
+  height: 100vw;
+  overflow: hidden;
+}
+
 body,header {
   max-width: 100vw;
   padding: 0px;
