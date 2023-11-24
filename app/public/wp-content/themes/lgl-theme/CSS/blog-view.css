@@ -191,6 +191,12 @@
   font-size: 1.2em;
 }
 
+.date-author {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 /* References */
 
 .reference-title {
