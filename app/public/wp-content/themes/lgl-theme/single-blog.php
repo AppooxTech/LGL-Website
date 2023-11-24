@@ -64,8 +64,28 @@
             ?>
         </div>
 
+        <?php 
+            $related_blogs = new WP_Query(array( 'tag' => "announcement" ))
+
+         ?>
+
         <div class="related-blogs">
-            <p>Relataed Blogs</p>
+            <?php 
+                if ($related_blogs->have_posts()) {
+                    while ($related_blogs->have_posts()) {
+                        $related_blogs->the_post();
+                        if (get_the_title() != $topic){
+                            
+                            ?>
+                                <div class="related-blog-container">
+                                    <h2><?php echo get_the_title(); ?></h2>
+                                </div>
+                                
+                            <?php 
+                        }
+                    }
+                }
+             ?>
         </div>
 
     </section>
