@@ -4,21 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
 
-/* Global CSS */
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* Styling for container of Nav bar */
 .header-navbar {
-  /* background-color: #f1f6f5; */
   display: flex;
   justify-content: space-between; /*Distribute items to the left and right */
-  /* padding: 10px; */
   position: fixed;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  width: 100vw;
   background-image: linear-gradient(
     to bottom,
     rgb(255, 255, 255) 0%,
@@ -129,20 +120,9 @@
 /* Sign in button styling */
 
 .sign-in {
-  border: 3px solid #333138;
-  border-radius: 20px;
-  /* background-color: #0081c9; */
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #333138;
-  /* padding-left: 30px;
-  padding-right: 30px; */
-  padding: 10px 30px;
-}
-
-.sign-in:hover {
-  background-color: #f1f6f5;
-  border: 3px solid #333138;
-  color: #333138;
+  height: 50%;
+  justify-self: center;
+  align-self: center;
 }
 
 .product-container {

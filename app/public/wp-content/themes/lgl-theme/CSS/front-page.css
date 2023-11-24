@@ -1,7 +1,108 @@
-.main-body {
-  height: 1500px;
+div.main-body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
-h1 {
-  color: red;
+div.header-container {
+    width: 100vw;
+    height: max-content;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+div.aboutus-container {
+    min-height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 3px var(--dark);
+    background-size: cover;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 12px;
+}
+
+h1.aboutus {
+    text-align: center;
+    font-size: 3vw;
+    width: 100%;
+    color: var(--light);
+}
+
+p.aboutus {
+    font-size: 1.8vw;
+    color: var(--light);
+}
+
+div.services-container {
+    width: 100%;
+    height: max-content;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 3px var(--dark);
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+article.services {
+    color: var(--light);
+}
+
+section.services-first {
+    margin-bottom: 20px;
+}
+
+h1.services {
+    font-size: 3vw;
+    font-weight: bolder;
+    text-align: center;
+    color: var(---dark);
+    margin-bottom: 10px;
+}
+
+p.services {
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: left;
+    text-indent: 5px;
+    color: var(--light);
+}
+
+h2.services {
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: left;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+
+ul.services {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: left;
+    list-style-type: square;
+    list-style: none;
+    padding: 0;
+    margin-left: 5%;
+}
+
+ul.services>li::before {
+    content: "\2023";
+    /* Unicode for a bullet point */
+    color: var(--light);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }

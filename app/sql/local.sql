@@ -134,7 +134,7 @@ CREATE TABLE `wp_options` (
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`),
   KEY `autoload` (`autoload`)
-) ENGINE=InnoDB AUTO_INCREMENT=307 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=229 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,9 +218,9 @@ INSERT INTO `wp_options` VALUES (72,'comments_per_page','50','yes');
 INSERT INTO `wp_options` VALUES (73,'default_comments_page','newest','yes');
 INSERT INTO `wp_options` VALUES (74,'comment_order','asc','yes');
 INSERT INTO `wp_options` VALUES (75,'sticky_posts','a:0:{}','yes');
-INSERT INTO `wp_options` VALUES (76,'widget_categories','a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}','yes');
-INSERT INTO `wp_options` VALUES (77,'widget_text','a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}','yes');
-INSERT INTO `wp_options` VALUES (78,'widget_rss','a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}','yes');
+INSERT INTO `wp_options` VALUES (76,'widget_categories','a:0:{}','yes');
+INSERT INTO `wp_options` VALUES (77,'widget_text','a:0:{}','yes');
+INSERT INTO `wp_options` VALUES (78,'widget_rss','a:0:{}','yes');
 INSERT INTO `wp_options` VALUES (79,'uninstall_plugins','a:0:{}','no');
 INSERT INTO `wp_options` VALUES (80,'timezone_string','','yes');
 INSERT INTO `wp_options` VALUES (81,'page_for_posts','0','yes');
@@ -316,7 +316,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -616,3 +616,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2023-11-06 18:05:35
+

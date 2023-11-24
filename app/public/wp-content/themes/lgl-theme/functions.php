@@ -6,7 +6,6 @@ function enqueue_front_page_css()
         wp_enqueue_style('front-page-style', get_template_directory_uri() . '/CSS/front-page.css');
     }
 }
-
 function enqueue_header_css()
 {
     wp_enqueue_style('header-style', get_template_directory_uri() . '/CSS/header.css');
@@ -17,7 +16,6 @@ function enqueue_footer_css()
 {
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/CSS/footer.css');
 }
-
 
 function custom_single_template($single_template)
 {
@@ -44,21 +42,29 @@ function enqueue_specific_css()
         wp_enqueue_style('software-styles', get_template_directory_uri() . '/CSS/software.css');
     } elseif (is_page('contact-us-page')) {
         wp_enqueue_style('contact-us-styles', get_template_directory_uri() . '/CSS/contact-us.css');
+    } elseif (is_page('front-page')) {
+        wp_enqueue_style('front-page-styles', get_template_directory_uri() .'/CSS/front-page.css');
     }
     // Add more conditions for other pages as needed
-}
 
+}
 function add_global_css()
 {
     wp_enqueue_style('global-css', get_template_directory_uri() . './style.css');
 }
 
-add_filter('single_template', 'custom_single_template');
-add_action('wp_enqueue_scripts', 'enqueue_specific_css');
-add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
-add_action('wp_enqueue_scripts', 'enqueue_header_css');
+// Custom Component styles
+function add_custom_components_css()
+{
+    wp_enqueue_style('custom-button-styles', get_template_directory_uri() . '/CSS/custom-components/custom-button.css');
+    wp_enqueue_style('custom-input-styles', get_template_directory_uri() . '/CSS/custom-components/custom-input.css');
+    wp_enqueue_style('custom-carousel-styles', get_template_directory_uri() . '/CSS/custom-components/custom-carousel.css');
+}
+
 add_action('wp_enqueue_scripts', 'enqueue_footer_css', 999);
 add_filter('single_template', 'custom_single_template');
-add_action('wp_enqueue_scripts', 'enqueue_specific_css');
-add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
 add_action('wp_enqueue_scripts', 'add_global_css');
+add_action('wp_enqueue_scripts', 'enqueue_header_css');
+add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
+add_action('wp_enqueue_scripts', 'enqueue_specific_css');
+add_action('wp_enqueue_scripts','add_custom_components_css');
