@@ -13,7 +13,7 @@
     <?php 
 
     $topic = get_the_title();
-    $tags = get_tags();
+    $tags = get_the_tags();
     $author = get_the_author();
     $content = get_the_content();
     ?>
@@ -69,15 +69,14 @@
 
          ?>
 
-        <div class="related-blogs">
+        <div class="related-blog-container">
             <?php 
                 if ($related_blogs->have_posts()) {
                     while ($related_blogs->have_posts()) {
                         $related_blogs->the_post();
                         if (get_the_title() != $topic){
-                            
                             ?>
-                                <div class="related-blog-container">
+                                <div class="related-blogs">
                                     <h2><?php echo get_the_title(); ?></h2>
                                 </div>
                                 
