@@ -3,6 +3,7 @@ nav.navbar-container {
   justify-content: space-between;
   width: 100vw;
   height: 20vh;
+  max-height: 150px;
   position: fixed;
   background-color: var(--light);
   border-bottom: var(--dark) solid 1px;
@@ -52,7 +53,7 @@ div.navigation-buttons-container:hover > span:hover {
 span.navigation-button {
   cursor: pointer;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.8vw;
   font-weight: 500;
   justify-content: space-around;
   color: var(--dark);

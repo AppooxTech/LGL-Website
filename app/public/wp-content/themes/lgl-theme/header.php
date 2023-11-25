@@ -27,7 +27,7 @@
         <span class="navigation-button" role="button">Contact Us</span>
       </div>
       <div class="signin-button-container">
-        <?php echo get_template_part("components/button", "sign-in-button", ["button_txt" => 'Sign in']); ?>
+        <!-- <?php echo get_template_part("components/button", "sign-in-button", ["button_txt" => 'Sign in']); ?> -->
       </div>
     </nav>
     <div class="dropdown-container hide" id="dropdown" onmouseleave="on_mouse_leave();">
