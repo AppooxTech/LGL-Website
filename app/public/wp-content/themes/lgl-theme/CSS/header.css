@@ -39,7 +39,6 @@ div.navigation-buttons-container {
   transition: all 200ms ease-out;
   justify-self: center;
   padding-top: 15px;
-  padding-left: 0.8%;
 }
 
 div.navigation-buttons-container:hover > div:hover > span,
@@ -60,7 +59,7 @@ div.navigation-buttons-container:hover > span.navigation-button:hover {
 span.navigation-button {
   cursor: pointer;
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 3vw;
   font-weight: 500;
   justify-content: space-around;
   color: var(--dark);
@@ -101,7 +100,7 @@ div.dropdown-container {
   display: flex;
   flex-direction: column;
   gap: 10%;
-  width: 10%;
+  width: 20%;
   height: min-content;
 }
 
