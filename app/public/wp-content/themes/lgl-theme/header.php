@@ -28,21 +28,21 @@
   <div class="dropdown-container hide" id="dropdown" onmouseleave="on_mouse_leave();">
     <div class="first section">
       <h3 class="section-header">Section</h3>
-      <span class="section-item" role="button">item 1</span>
-      <span class="section-item">item 2</span>
-      <span class="section-item">item 3</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 1</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 2</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 3</span>
     </div>
     <div class="second section">
       <h3 class="section-header">Section</h3>
-      <span class="section-item">item 1</span>
-      <span class="section-item">item 2</span>
-      <span class="section-item">item 3</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 1</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 2</span>
+      <span class="section-item" role="button" onclick="on_click();" >item 3</span>
     </div>
     <div class="third section">
       <h2 class="section-header">Section</h3>
-        <span class="section-item">item 1</span>
-        <span class="section-item">item 2</span>
-        <span class="section-item">item 3</span>
+        <span class="section-item" role="button" onclick="on_click();" >item 1</span>
+        <span class="section-item" role="button" onclick="on_click();" >item 2</span>
+        <span class="section-item" role="button" onclick="on_click();" >item 3</span>
     </div>
   </div>
 </body>
