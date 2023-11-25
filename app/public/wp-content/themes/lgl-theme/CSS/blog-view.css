@@ -97,22 +97,50 @@
 .related-blog-container {
   display: flex;
   flex-direction: row;
-  background-color: aqua;
+  background-color: #a3a3a3;
   padding: 0 20vw;
 
-  height: 300px;
+  height: 250px;
   /* flex-basis: 25vw; */
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+/* Related blogs items */
+.related-blog-container > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .related-blogs {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 15vw;
+
+  gap: 10px;
 }
 
-.date-author {
+.related-blogs > h2 {
+  font-size: 2em;
+  color: #f7f7ff;
+}
+
+.date-author,
+.related-blogs > tags {
   display: flex;
   flex-direction: row;
   gap: 10px;
+
+  font-size: 1.2em;
 }
 
 /* References */

@@ -66,7 +66,7 @@
             echo '<p>' . $textContent . '</p>';
             ?>
         </div>
-
+    </section>
         <?php 
             $related_blogs = new WP_Query(array( 'tag' => $tags_filter ))
 
@@ -81,16 +81,28 @@
                         $related_blogs->the_post();
                         if (get_the_title() != $topic && $related_counter < 5){
                             ?>
+                            <a href="<?php echo get_permalink(); ?>">
                                 <div class="related-blogs">
                                     <h2><?php echo get_the_title(); ?></h2>
+                                    <tags>
+                                    <?php 
+                                        $tags = get_the_tags();
+                                        $tags_count = count($tags);
+                                        foreach ($tags as $index => $tag) {
+                                            echo $tag->name;
+                                            if ($index < $tags_count - 1) {
+                                                echo ', ';
+                                            }
+                                        }
+                 ?>
+                                    </tags>
                                     <div class="date-author">
                                         <p><?php echo get_the_time('jS M Y'); ?></p>
                                         <p><?php echo get_the_author(); ?></p>
-                                        <p><?php echo $tags_filter ?></p>
                                     </div>
 
                                 </div>
-                                
+                                </a>
                             <?php 
                         }
                     }
@@ -98,7 +110,7 @@
              ?>
         </div>
 
-    </section>
+    
 </section>
 <?php
         endwhile;
