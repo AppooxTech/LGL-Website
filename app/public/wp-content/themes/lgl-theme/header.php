@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-
-<html <?php language_attributes(); ?>>
-
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta charset="<?php bloginfo("charset") ?>">
@@ -10,61 +6,60 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header>
-    <nav class="navbar-container">
-      <div class="logo-container">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" class="logo" width="200"
-          alt="Business-Logo">
-        <span class="seo-hidden-text">LGL Light Guide Lund</span>
+  <nav class="navbar-container">
+    <div class="logo-container">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" class="logo" width="200"
+        alt="Business-Logo">
+      <span class="seo-hidden-text">LGL Light Guide Lund</span>
+    </div>
+    <div class="navigation-buttons-container">
+      <div class="navigation-button" role="button" onclick="on_click();">
+        <span class="navigation-button">Products</span>
+        <img id="down-chev" src="<?php echo get_template_directory_uri(); ?>/images/icons/icons8-chevron-down-30.png" width="20"
+          alt="down">
       </div>
-      <div class="navigation-buttons-container">
-        <div class="navigation-button" role="button" onmouseenter="on_mouse_enter();">
-          <span class="navigation-button">Products</span>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icons8-chevron-down-30.png" width="20"
-            alt="down">
-        </div>
-        <span class="navigation-button" role="button">Blogs</span>
-        <span class="navigation-button" role="button">Contact Us</span>
-      </div>
-      <div class="signin-button-container">
-        <!-- <?php echo get_template_part("components/button", "sign-in-button", ["button_txt" => 'Sign in']); ?> -->
-      </div>
-    </nav>
-    <div class="dropdown-container hide" id="dropdown" onmouseleave="on_mouse_leave();">
-      <div class="first section">
-        <h3 class="section-header">Section</h3>
-        <span class="section-item" role="button">item 1</span>
-        <span class="section-item">item 2</span>
-        <span class="section-item">item 3</span>
-      </div>
-      <div class="second section">
-        <h3 class="section-header">Section</h3>
+      <span class="navigation-button" role="button">Blogs</span>
+      <span class="navigation-button" role="button">Contact Us</span>
+    </div>
+    <div class="signin-button-container">
+      <!-- <?php echo get_template_part("components/button", "sign-in-button", ["button_txt" => 'Sign in']); ?> -->
+    </div>
+  </nav>
+  <div class="dropdown-container hide" id="dropdown" onmouseleave="on_mouse_leave();">
+    <div class="first section">
+      <h3 class="section-header">Section</h3>
+      <span class="section-item" role="button">item 1</span>
+      <span class="section-item">item 2</span>
+      <span class="section-item">item 3</span>
+    </div>
+    <div class="second section">
+      <h3 class="section-header">Section</h3>
+      <span class="section-item">item 1</span>
+      <span class="section-item">item 2</span>
+      <span class="section-item">item 3</span>
+    </div>
+    <div class="third section">
+      <h2 class="section-header">Section</h3>
         <span class="section-item">item 1</span>
         <span class="section-item">item 2</span>
         <span class="section-item">item 3</span>
-      </div>
-      <div class="third section">
-        <h2 class="section-header">Section</h3>
-          <span class="section-item">item 1</span>
-          <span class="section-item">item 2</span>
-          <span class="section-item">item 3</span>
-      </div>
     </div>
-  </header>
-  <hr>
-  <!-- remove this in the end -->
-
+  </div>
 </body>
 
 <script>
   const drop_down = document.getElementById('dropdown');
+  const down_chev =document.getElementById('down-chev');
 
-
-
-  const on_mouse_enter = () => {
+  const on_click = () => {
     if (drop_down.classList.contains('hide')) {
       drop_down.classList.remove('hide');
       drop_down.classList.add('show');
+      down_chev.classList.add('rotated');
+    } else if (drop_down.classList.contains('show')) {
+      drop_down.classList.remove('show');
+      drop_down.classList.add('hide');
+      down_chev.classList.remove('rotated')
     }
   }
 
@@ -73,6 +68,7 @@
       if (drop_down.classList.contains('show')) {
         drop_down.classList.remove('show');
         drop_down.classList.add('hide');
+        down_chev.classList.remove('rotated');
       }
       clearTimeout(timeout);
     }, 200)
