@@ -120,7 +120,7 @@
   background-color: #a3a3a3;
   padding: 0 20vw;
 
-  height: 300px;
+  height: 250px;
   /* flex-basis: 25vw; */
   gap: 40px;
   justify-content: center;
@@ -191,10 +191,18 @@
   font-size: 1.2em;
 }
 
-.date-author {
+.related-blogs > h2 {
+  font-size: 2em;
+  color: #f7f7ff;
+}
+
+.date-author,
+.related-blogs > tags {
   display: flex;
   flex-direction: row;
   gap: 10px;
+
+  font-size: 1.2em;
 }
 
 /* References */
