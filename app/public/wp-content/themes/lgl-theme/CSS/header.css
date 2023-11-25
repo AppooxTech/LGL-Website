@@ -1,4 +1,18 @@
-nav.navbar-container {
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+/* Global CSS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for container of Nav bar */
+.header-navbar {
+  /* background-color: #f1f6f5; */
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -20,9 +34,11 @@ div.logo-container {
   width: 30%;
 }
 
-span.seo-hidden-text {
-  visibility: hidden;
-  display: none;
+/* Logo Positioning */
+.navbar > a > img {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 img.logo {
@@ -96,12 +112,14 @@ div.navigation-button > img#down-chev.rotated {
   transform: rotate(-180deg);
 }
 
-div.signin-button-container {
-  height: 80%;
-  width: 15%;
-  padding: 30px;
-  align-self: center;
-  margin-top: 20px;
+/* Style the anchor links (if needed) */
+.navbar-item,
+.contact-us {
+  text-decoration: none;
+  color: #333138; /* Change the color as desired */
+  /*border: 1px solid #60656f;  Add borders or other styling as needed */
+  border-radius: 5px;
+  font-size: 30px;
 }
 
 div.dropdown-container {
@@ -139,46 +157,44 @@ div#dropdown.hide {
   display: none;
 }
 
-div.section {
+.dropdown .dropdown-text {
+  color: #333138;
+}
+
+.dropdown .category {
+  color: #333138;
+}
+
+/* Sign in button styling */
+
+.sign-in {
+  border: 3px solid #333138;
+  border-radius: 20px;
+  /* background-color: #0081c9; */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333138;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  padding: 10px 30px;
+}
+
+.sign-in:hover {
+  background-color: #f1f6f5;
+  border: 3px solid #333138;
+  color: #333138;
+}
+
+.product-container {
   display: flex;
-  grid-column: span 3;
-  grid-row: span 6;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: space-around;
-  padding-left: 12px;
+  gap: 5px;
 }
 
-div.section.first {
-  grid-column: span 3;
-  grid-row: span 6;
+.dropdown-icon {
+  margin-top: 6px;
 }
 
-div.section.second {
-  grid-column: 4/7;
-  grid-row: span 6;
-}
-
-div.section.third {
-  grid-column: span 6;
-  grid-row: span 6;
-}
-
-h3.section-header {
-  color: var(--dark);
-  font-weight: 700;
-}
-
-span.section-item {
-  color: var(--dark-grey);
-  font-weight: 600;
-  cursor: pointer;
-  opacity: 75%;
-  margin-left: 10px;
-}
-
-span.section-item:hover {
-  opacity: 100%;
+.navbar-item {
+  font-weight: bold;
 }
 
 /* mobile styles */

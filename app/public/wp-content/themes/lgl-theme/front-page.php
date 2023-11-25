@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 $carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'image' => get_template_directory_uri() . '/images/HYSPIM.png']];
 ?>
 
@@ -86,3 +87,16 @@ $carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'im
         z-index: -1;
     }
 </style>
+=======
+get_header();
+?>
+
+<div class="main-body">
+    <img width="100%" src="<?php echo get_template_directory_uri(); ?>/images/spectral-camera.jpg" alt="Business Logo">
+<div class="carrousel">
+</div>
+
+<?php
+get_footer();
+?>
+>>>>>>> 04c5178 (Updating blog)
