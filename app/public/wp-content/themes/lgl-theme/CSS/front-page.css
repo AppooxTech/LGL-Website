@@ -1,7 +1,119 @@
-.main-body {
-  height: 1500px;
+div.front-page-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
-h1 {
-  color: red;
+section.header-container{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+section.body-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    /* scroll-padding-top: 15vw; */
+}
+
+div.aboutus-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 3px var(--dark);
+    background-size: cover;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 12px;
+    scroll-snap-align: start;
+}
+
+h1.aboutus {
+    text-align: center;
+    font-size: 3vw;
+    width: 100%;
+    color: var(--light);
+}
+
+p.aboutus {
+    font-size: 1.8vw;
+    color: var(--light);
+}
+
+div.services-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: solid 3px var(--dark);
+    background-size: cover;
+    scroll-snap-align: start;
+    color: var(--light);
+}
+
+section.services-first {
+    margin-bottom: 20px;
+}
+
+h1.services {
+    font-size: 3vw;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p.services {
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-align: left;
+    text-indent: 5px;
+}
+
+h2.services {
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ul.services {
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: left;
+    list-style-type: square;
+    list-style: none;
+    padding: 0;
+    margin-left: 5%;
+}
+
+ul.services>li::before {
+    content: "\2023";
+    /* Unicode for a bullet point */
+    color: var(--light);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+div.footer-container {
+    width: 100vw;
+    height: 15vh;
 }
