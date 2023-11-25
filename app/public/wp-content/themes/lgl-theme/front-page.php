@@ -9,18 +9,24 @@ $carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'im
         <div class="aboutus-container aboutus-background">
             <h1 class="aboutus">Our mission is to turn your idea into reality</h1>
             <p class="aboutus">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
-                voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
-                voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
-                voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Quibusdam inventore deleniti illum soluta eaque esse cum neque, eos aliquid necessitatibus velit,
-                voluptatem magnam voluptatibus dolorem nemo ex natus veniam molestias?
+                Our expertise is in the fields of optical engineering, optical design, and prototyping optomechanical
+                instruments. Light Guide in Lund AB (LGL AB) is involved in a range of activities including Optics and
+                Opto-Mechanics, designing and manufacturing of instruments and procurement of instruments, design, and
+                manufacturing of vision systems, and milling & machining services.
+                LGL is a leading trademark in the field of hyperspectral imaging, based in Sweden. With over 11 years of
+                experience in the industry, LGL is dedicated to developing innovative applications and solutions around
+                hyperspectral imaging technology. The company is committed to turning your ideas into reality by
+                offering customized products that cater to the specific needs of each customer.
+                LGL takes pride in offering products that are the result of years of extensive testing, debugging, and
+                optimization. The company's expertise in hyperspectral imaging enables them to provide reliable and
+                high-quality products that meet the most demanding requirements of their customers.
+                LGL comprehensive control and data collection software for their hyperspectral imagers, which is
+                available in both Python and MATLAB. This software is designed to simplify the imaging process,
+                providing users with an intuitive interface that allows them to focus on the task at hand. The software
+                is constantly updated, ensuring that it remains compatible with the latest imaging technology and
+                software.
+                Whether you are looking for a customized solution or a ready-to-use product, LGL the expertise to meet
+                your needs
             </p>
         </div>
         <div class="services-container services-background">
