@@ -1,8 +1,5 @@
 <?php
-$template_uri = get_template_directory_uri();
-
-$carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'image' => (string) $template_uri . '/images/HYSPIM.png']];
-
+$carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'image' => get_template_directory_uri() . '/images/HYSPIM.png']];
 ?>
 
 <div class="front-page-container">
