@@ -3,7 +3,9 @@ div.front-page-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: span;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 section.header-container{
@@ -17,7 +19,6 @@ section.body-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: min-content;
 }
 
 div.aboutus-container {
@@ -30,7 +31,6 @@ div.aboutus-container {
     padding-left: 15%;
     padding-right: 15%;
     gap: 12px;
-    scroll-snap-align: center;
 }
 
 h1.aboutus {
@@ -57,7 +57,6 @@ div.services-container {
     justify-content: flex-start;
     border-top: solid 3px var(--dark);
     background-size: cover;
-    scroll-snap-align: start;
     color: var(--light);
 }
 
@@ -109,5 +108,4 @@ section.footer-container {
     width: 100vw;
     height: 15vh;
     max-height: 100px;
-    background-color: #fff;
 }
