@@ -12,10 +12,9 @@ nav.navbar-container {
 
 div.logo-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding-left: 12px;
-  width: 10%;
+  width: 30%;
 }
 
 span.seo-hidden-text {
@@ -23,8 +22,11 @@ span.seo-hidden-text {
   display: none;
 }
 
-image.logo {
-  width: 100%;
+img.logo {
+  width: 80%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
 }
 
 div.navigation-buttons-container {

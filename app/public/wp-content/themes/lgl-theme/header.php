@@ -8,8 +8,8 @@
 <body <?php body_class(); ?>>
   <nav class="navbar-container">
     <div class="logo-container">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" class="logo" width="200"
-        alt="Business-Logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" 
+        alt="Business-Logo" class="logo" >
       <span class="seo-hidden-text">LGL Light Guide Lund</span>
     </div>
     <div class="navigation-buttons-container">
