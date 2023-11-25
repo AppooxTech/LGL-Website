@@ -4,7 +4,9 @@ nav.navbar-container {
   width: 100vw;
   height: 20vh;
   max-height: 200px;
-  position: fixed;
+  position: sticky;
+  top: 0px;
+  left: 0px;
   background-color: var(--light);
   border-bottom: var(--dark) solid 1px;
   z-index: 10;
