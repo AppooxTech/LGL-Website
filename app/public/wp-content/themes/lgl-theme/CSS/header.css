@@ -3,7 +3,7 @@ nav.navbar-container {
   justify-content: space-between;
   width: 100vw;
   height: 20vh;
-  max-height: 150px;
+  max-height: 200px;
   position: fixed;
   background-color: var(--light);
   border-bottom: var(--dark) solid 1px;
