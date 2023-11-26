@@ -187,34 +187,44 @@ div.menu-icon-container {
   align-items: center;
 }
 
-div#backdrop {
-  background-color: var(--dark);
-  opacity: 75%;
+div#overlay-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   width: 100vw;
   height: 100vh;
-  display: block;
-  transition: all 200ms linear;
+  z-index: 10;
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 10;
+  transition: all 400ms linear;
+}
+
+div#overlay-container.hide {
+  visibility: hidden;
+}
+
+div#backdrop {
+  background-color: var(--dark);
+  opacity: 75%;
+  width: 65%;
+  height: 100%;
+  transition: all 200ms linear;
 }
 
 div#backdrop.hide {
   opacity: 0%;
+  width: 100%;
   visibility: hidden;
 }
 
 div#menu-container {
   width: 35%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--light);
   padding: 30px 10px;
   transition: all 200ms linear;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 11;
+  z-index: 20;
 }
 
 div#menu-container.hide {
@@ -240,3 +250,28 @@ button.menu-button {
   justify-content: space-around;
   color: var(--light);
 }
+
+img#down-chev{
+  transition: all 200ms ease-out;
+}
+
+img#down-chev.rotated {
+  transform: rotate(180deg);
+}
+
+div#products-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--grey);
+  text-indent: 15px;
+}
+
+div#products-list-container.hide {
+  visibility: hidden;
+  display: none;
+  height: 0px;
+}
+
+

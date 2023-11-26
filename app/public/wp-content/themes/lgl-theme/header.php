@@ -53,20 +53,28 @@ $mobile_template = <<<TEXT
     <div class="menu-icon-container" onclick="on_click_menu();">
       <img src="$template_directory_uri/images/icons/icons8-menu.svg" alt="menu" width="35" id="menu-icon">
     </div>
-    <div id="backdrop" class="hide" onclick="on_click_menu();">
-    </div>
-    <div id="menu-container" class="hide">
-      <div class="menu">
-        <button class="menu-button onclick="on_click_menu();">
-          products
-          <img src="$template_directory_uri/images/icons/icons8-chevron-down-30.png" width="20">
-        </button>
-        <button class="menu-button onclick="on_click_menu();">
-          Blogs
-        </button>
-        <button class="menu-button onclick="on_click_menu();">
-          Contact us
-        </button>
+    <div id="overlay-container" class="hide">
+      <div id="menu-container" class="hide">
+        <div class="menu">
+          <button class="menu-button" onclick="on_click_products();">
+            products
+            <img src="$template_directory_uri/images/icons/icons8-chevron-down-50.png" id="down-chev" width="20">
+          </button>
+          <div id="products-list-container" class="hide">
+            <h2>Sction</h2>
+            <span>item</span>
+            <span>item</span>
+            <span>item</span>
+            </div>
+          <button class="menu-button" onclick="on_click_menu();">
+            Blogs
+          </button>
+          <button class="menu-button" onclick="on_click_menu();">
+            Contact us
+          </button>
+        </div>
+      </div>
+      <div id="backdrop" class="hide" onclick="on_click_menu();">
       </div>
     </div>
   TEXT;
@@ -90,8 +98,10 @@ $mobile_template = <<<TEXT
   let drop_down;
   let down_chev;
   let menu_icon;
+  let overlay_container;
   let backdrop;
   let menu_container;
+  let products_container;
 
 
   const set_template = () => {
@@ -102,12 +112,14 @@ $mobile_template = <<<TEXT
       drop_down = html_template.getElementById('dropdown');
       down_chev = html_template.getElementById('down_chev');
     }
-
     else {
       html_template = parser.parseFromString(`<?php echo $mobile_template ?>`, "text/html");
       menu_icon = html_template.getElementById('menu_icon');
       backdrop = html_template.getElementById('backdrop');
       menu_container = html_template.getElementById('menu-container');
+      products_container = html_template.getElementById('products-list-container');
+      overlay_container = html_template.getElementById('overlay-container');
+      down_chev = html_template.getElementById('down-chev');
     }
 
     navbar.append(...html_template.body.children)
@@ -125,13 +137,25 @@ $mobile_template = <<<TEXT
 
   const on_click_menu = () => {
     if (backdrop.classList.contains('hide')) {
+      overlay_container.classList.remove('hide');
       backdrop.classList.remove('hide');
-      setTimeout(() => menu_container.classList.remove('hide'), 100)
+      menu_container.classList.remove('hide');
     } else {
+      overlay_container.classList.add('hide');
       menu_container.classList.add('hide');
-      setTimeout(() => backdrop.classList.add('hide'), 100)
+      backdrop.classList.add('hide');
     }
+  }
 
+  const on_click_products = () => {
+    if (products_container.classList.contains('hide')){
+      products_container.classList.remove('hide');
+      down_chev.classList.add('rotated');
+    }
+    else{
+      products_container.classList.add('hide');
+      down_chev.classList.remove('rotated');
+    }
   }
 
   const on_mouse_leave = () => {
