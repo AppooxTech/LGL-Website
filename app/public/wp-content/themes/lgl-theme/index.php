@@ -8,7 +8,7 @@
     // Display tags as a horizontal bar
     echo '<div class="blog-list-container">';
     echo '<div class="tags-bar">';
-    echo '<p> Tags: </p>';
+    echo '<p class="tag-title"> Tags: </p>';
     echo '<a href="#" class="tag-filter" data-tag="all">All</a>';
     foreach ($tags as $tag) {
         $tag_link = get_tag_link($tag->term_id);
@@ -17,7 +17,7 @@
     echo '</div>';
     ?>
     
-    <div id="blog-posts-container">
+    <div id="blog-posts-container" class="blog-posts-container">
         <?php
         // The Query for blog posts without tag filter
         $args = array(
@@ -34,21 +34,25 @@
                 $blog_query->the_post();
                 $content = get_the_content();
                 $dom = new DOMDocument;
+                $permalink = get_the_permalink();
                 libxml_use_internal_errors(true);
                 $dom->loadHTML($content);
                 libxml_clear_errors();
                 $images = $dom->getElementsByTagName('img');
                 $paragraphs = $dom->getElementsByTagName('p');
                 ?>
-                <div class="blog-item">
+                <a class="blog-item" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
                     
                     <div class="blog-item-details">
-                        <h2><?php the_title(); ?></h2>
+                        <div class="blog-item-title-author">
+                            <h2><?php the_title(); ?></h2>
+                            <p><?php the_author(); ?></p>
+                        </div>
                         <p><?php the_excerpt() ?></p>
-                        <p><?php the_author(); ?></p>
+                        
                     </div>
-                </div>
+                </a>
                 <?php
             }
             /* Restore original Post Data */
