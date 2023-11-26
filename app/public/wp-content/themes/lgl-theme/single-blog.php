@@ -80,25 +80,36 @@
                         $related_counter++;
                         $related_blogs->the_post();
                         if (get_the_title() != $topic && $related_counter < 5){
+                            $sub_content = get_the_content();
+                            $dom = new DOMDocument;
+                            libxml_use_internal_errors(true);
+                            $dom->loadHTML($sub_content);
+                            libxml_clear_errors();
+                            $images = $dom->getElementsByTagName('img');
+                            $paragraphs = $dom->getElementsByTagName('p');
                             ?>
                             <a href="<?php echo get_permalink(); ?>">
+                                
                                 <div class="related-blogs">
-                                    <h2><?php echo get_the_title(); ?></h2>
-                                    <tags>
-                                    <?php 
-                                        $tags = get_the_tags();
-                                        $tags_count = count($tags);
-                                        foreach ($tags as $index => $tag) {
-                                            echo $tag->name;
-                                            if ($index < $tags_count - 1) {
-                                                echo ', ';
+                                    <?php echo $dom->saveHTML($images->item(0)); ?>
+                                    <div class="related-blogs-details">
+                                        <h2><?php echo get_the_title(); ?></h2>
+                                        <tags>
+                                        <?php 
+                                            $tags = get_the_tags();
+                                            $tags_count = count($tags);
+                                            foreach ($tags as $index => $tag) {
+                                                echo $tag->name;
+                                                if ($index < $tags_count - 1) {
+                                                    echo ', ';
+                                                }
                                             }
-                                        }
-                 ?>
-                                    </tags>
-                                    <div class="date-author">
-                                        <p><?php echo get_the_time('jS M Y'); ?></p>
-                                        <p><?php echo get_the_author(); ?></p>
+                                        ?>
+                                        </tags>
+                                        <div class="date-author">
+                                            <p><?php echo get_the_time('jS M Y'); ?></p>
+                                            <p><?php echo get_the_author(); ?></p>
+                                        </div>
                                     </div>
 
                                 </div>

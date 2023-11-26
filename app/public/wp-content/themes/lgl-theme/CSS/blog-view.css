@@ -100,7 +100,7 @@
   background-color: #a3a3a3;
   padding: 0 20vw;
 
-  height: 250px;
+  height: 300px;
   /* flex-basis: 25vw; */
   gap: 40px;
   justify-content: center;
@@ -114,9 +114,11 @@
   text-decoration: none;
   color: inherit;
   font-weight: normal;
-  border: 5px solid black;
+  background-color: #f7f7ff;
+  height: 250px;
+
   border-radius: 5px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .related-blogs {
@@ -128,10 +130,18 @@
 
   gap: 10px;
 }
+.related-blogs-details {
+  padding: 0 20px;
+}
 
 .related-blogs > h2 {
-  font-size: 2em;
-  color: #f7f7ff;
+  font-size: 1.2em;
+  color: #a3a3a3;
+}
+
+.related-blogs > img {
+  height: 120px;
+  width: auto;
 }
 
 .date-author,
