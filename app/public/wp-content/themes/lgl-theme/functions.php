@@ -116,15 +116,22 @@ function filter_posts() {
             $images = $dom->getElementsByTagName('img');
             $paragraphs = $dom->getElementsByTagName('p');
             ?>
-            <div class="blog-item">
-                <?php echo $dom->saveHTML($images->item(0)); ?>
-                
-                <div class="blog-item-details">
-                    <h2><?php the_title(); ?></h2>
-                    <p><?php the_excerpt() ?></p>
-                    <p><?php the_author(); ?></p>
-                </div>
-            </div>
+                <a class="blog-item" href="<?php echo $permalink ?>">
+                    <?php echo $dom->saveHTML($images->item(0)); ?>
+                    
+                    <div class="blog-item-text">
+                        <h1><?php the_title(); ?></h1>
+                        <p><?php the_excerpt() ?></p>
+                        
+                        <div class="blog-item-details">
+                            
+                            <date><?php the_time('jS M Y'); ?></date>
+                            <p>By: <?php the_author(); ?></p>
+                        </div>
+                        
+                        
+                    </div>
+                </a>
             <?php
         }
         wp_reset_postdata();
@@ -147,15 +154,22 @@ function filter_posts() {
             $images = $dom->getElementsByTagName('img');
             $paragraphs = $dom->getElementsByTagName('p');
             ?>
-            <div class="blog-item">
-                <?php echo $dom->saveHTML($images->item(0)); ?>
-                
-                <div class="blog-item-details">
-                    <h2><?php the_title(); ?></h2>
-                    <p><?php the_excerpt() ?></p>
-                    <p><?php the_author(); ?></p>
-                </div>
-            </div>
+                <a class="blog-item" href="<?php echo $permalink ?>">
+                    <?php echo $dom->saveHTML($images->item(0)); ?>
+                    
+                    <div class="blog-item-text">
+                        <h1><?php the_title(); ?></h1>
+                        <p><?php the_excerpt() ?></p>
+                        
+                        <div class="blog-item-details">
+                            
+                            <date><?php the_time('jS M Y'); ?></date>
+                            <p>By: <?php the_author(); ?></p>
+                        </div>
+                        
+                        
+                    </div>
+                </a>
             <?php
         }
         wp_reset_postdata();
