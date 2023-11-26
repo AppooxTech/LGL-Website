@@ -44,12 +44,16 @@
                 <a class="blog-item" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
                     
-                    <div class="blog-item-details">
-                        <div class="blog-item-title-author">
-                            <h2><?php the_title(); ?></h2>
-                            <p><?php the_author(); ?></p>
-                        </div>
+                    <div class="blog-item-text">
+                        <h1><?php the_title(); ?></h1>
                         <p><?php the_excerpt() ?></p>
+                        
+                        <div class="blog-item-details">
+                            
+                            <date><?php the_time('jS M Y'); ?></date>
+                            <p>By: <?php the_author(); ?></p>
+                        </div>
+                        
                         
                     </div>
                 </a>
