@@ -66,6 +66,13 @@
                         </div>
                         
                         
+                        <div class="blog-item-details">
+                            
+                            <date><?php the_time('jS M Y'); ?></date>
+                            <p>By: <?php the_author(); ?></p>
+                        </div>
+                        
+                        
                     </div>
                 </a>
                 <?php
