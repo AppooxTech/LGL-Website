@@ -44,8 +44,7 @@ button {
 
 body {
   width: min-content;
-  height: 100vw;
-  overflow: hidden;
+  height: min-content;
 }
 
 body,header {

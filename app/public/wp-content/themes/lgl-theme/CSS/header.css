@@ -3,18 +3,21 @@ nav.navbar-container {
   justify-content: space-between;
   width: 100vw;
   height: 20vh;
-  position: fixed;
+  max-height: 200px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
   background-color: var(--light);
   border-bottom: var(--dark) solid 1px;
   z-index: 10;
 }
 
 div.logo-container {
+  cursor: pointer;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding-left: 12px;
-  width: 10%;
+  width: 30%;
 }
 
 span.seo-hidden-text {
@@ -22,8 +25,11 @@ span.seo-hidden-text {
   display: none;
 }
 
-image.logo {
-  width: 100%;
+img.logo {
+  width: 80%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
 }
 
 div.navigation-buttons-container {
@@ -36,23 +42,27 @@ div.navigation-buttons-container {
   transition: all 200ms ease-out;
   justify-self: center;
   padding-top: 15px;
-  padding-left: 15px;
 }
 
-div.navigation-buttons-container:hover > div > span ,
+div.navigation-buttons-container:hover > div:hover > span,
 div.navigation-buttons-container:hover > span {
   filter: opacity(50%);
 }
 
-div.navigation-buttons-container:hover > div > span:hover ,
+div.navigation-buttons-container:hover > div:hover > span,
 div.navigation-buttons-container:hover > span:hover {
   filter: opacity(100%);
-} 
+}
+
+div.navigation-buttons-container:hover > div.navigation-button:hover,
+div.navigation-buttons-container:hover > span.navigation-button:hover {
+  transform: scale(1.3);
+}
 
 span.navigation-button {
   cursor: pointer;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 3vw;
   font-weight: 500;
   justify-content: space-around;
   color: var(--dark);
@@ -62,15 +72,22 @@ span.navigation-button {
 }
 
 div.navigation-button {
+  cursor: pointer;
   display: flex;
   gap: 8px;
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
+  transition: all 200ms ease-out;
 }
 
-div.navigation-button > img {
+div.navigation-button > img#down-chev {
   margin-top: 5px;
+  transition: all 200ms ease-out;
+}
+
+div.navigation-button > img#down-chev.rotated {
+  transform: rotate(-180deg);
 }
 
 div.signin-button-container {
@@ -81,33 +98,39 @@ div.signin-button-container {
   margin-top: 20px;
 }
 
-
 div.dropdown-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 20%;
+  height: min-content;
+}
+
+div#dropdown {
+  order: 2;
+  display: grid;
+  opacity: 100%;
+  visibility: visible;
   width: max-content;
   height: max-content;
-  grid-template-columns: repeat(6,1fr);
-  grid-template-rows: repeat(12,1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   column-gap: 12px;
   row-gap: 20px;
-  position: absolute;
-  top: 15vh;
-  left: 20vw;
   background-color: var(--light);
   border: 1px var(--grey) solid;
+  border-radius: 5px;
+  padding: 10px 5px;
   z-index: 11;
   min-width: 300px;
   transition: opacity 150ms linear;
 }
 
-div.dropdown-container.hide {
+div#dropdown.hide {
   opacity: 0%;
   visibility: hidden;
-}
-
-div.dropdown-container.show{
-  display: grid;
-  opacity: 100%;
-  visibility: visible;
+  display: none;
 }
 
 div.section {
@@ -151,4 +174,104 @@ span.section-item {
 span.section-item:hover {
   opacity: 100%;
 }
+
+/* mobile styles */
+
+div.menu-icon-container {
+  width: 5%;
+  height: 100%;
+  cursor: pointer;
+  padding-right: 50px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+div#overlay-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 400ms linear;
+}
+
+div#overlay-container.hide {
+  visibility: hidden;
+}
+
+div#backdrop {
+  background-color: var(--dark);
+  opacity: 75%;
+  width: 65%;
+  height: 100%;
+  transition: all 200ms linear;
+}
+
+div#backdrop.hide {
+  opacity: 0%;
+  width: 100%;
+  visibility: hidden;
+}
+
+div#menu-container {
+  width: 35%;
+  height: 100%;
+  background-color: var(--light);
+  padding: 30px 10px;
+  transition: all 200ms linear;
+  z-index: 20;
+}
+
+div#menu-container.hide {
+  width: 0px;
+  visibility: hidden;
+}
+
+div.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--dark);
+}
+
+button.menu-button {
+  border: 2px var(--dark) solid;
+  background-color: var(--grey);
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--light);
+}
+
+img#down-chev{
+  transition: all 200ms ease-out;
+}
+
+img#down-chev.rotated {
+  transform: rotate(180deg);
+}
+
+div#products-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--grey);
+  text-indent: 15px;
+}
+
+div#products-list-container.hide {
+  visibility: hidden;
+  display: none;
+  height: 0px;
+}
+
 

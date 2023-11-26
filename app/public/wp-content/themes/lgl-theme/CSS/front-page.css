@@ -1,119 +1,154 @@
 div.front-page-container {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    min-height: 100vh;
-    justify-content: space-between;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: span;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-section.header-container{
-    width: 100%;
-    height: min-content;
-    display: flex;
-    justify-content: flex-start;
-    position: fixed;
+section.header-container {
+  width: 100%;
+  min-height: 20vh;
+  max-height: 200px;
 }
 
 section.body-container {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    margin-top: 20vh;
-    justify-content: flex-start;
-    flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y proximity;
-    /* scroll-padding-top: 15vw; */
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 div.aboutus-container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-top: solid 3px var(--dark);
-    background-size: cover;
-    padding-left: 15%;
-    padding-right: 15%;
-    gap: 12px;
-    scroll-snap-align: start;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 12px;
+  color: var(--light);
 }
 
 h1.aboutus {
-    text-align: center;
-    font-size: 3vw;
-    width: 100%;
-    color: var(--light);
+  text-align: center;
+  font-size: 3vw;
+  width: 100%;
+}
+
+section.aboutus {
+  display: flex;
+  gap: 25%;
 }
 
 p.aboutus {
-    font-size: 1.8vw;
-    color: var(--light);
+  font-size: 1.8vw;
+  font-weight: 600;
 }
 
 div.services-container {
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-top: solid 3px var(--dark);
-    background-size: cover;
-    scroll-snap-align: start;
-    color: var(--light);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--grey);
+  color: var(--light);
 }
 
 section.services-first {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 h1.services {
-    font-size: 3vw;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 3vw;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 p.services {
-    font-size: 1.5vw;
-    font-weight: 500;
-    text-align: left;
-    text-indent: 5px;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: left;
+  text-indent: 5px;
 }
 
 h2.services {
-    font-size: 2vw;
-    font-weight: 800;
-    text-align: left;
-    margin-bottom: 10px;
+  font-size: 2vw;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 ul.services {
-    font-size: 1.3vw;
-    font-weight: 700;
-    text-align: left;
-    list-style-type: square;
-    list-style: none;
-    padding: 0;
-    margin-left: 5%;
+  font-size: 1.3vw;
+  font-weight: 700;
+  text-align: left;
+  list-style-type: square;
+  list-style: none;
+  padding: 0;
+  margin-left: 5%;
 }
 
-ul.services>li::before {
-    content: "\2023";
-    /* Unicode for a bullet point */
-    color: var(--light);
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+ul.services > li::before {
+  content: "\2023";
+  /* Unicode for a bullet point */
+  color: var(--light);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-div.footer-container {
-    width: 100vw;
-    height: 15vh;
+ul.services > li {
+  margin-top: 20px;
+}
+
+section.footer-container {
+  width: 100vw;
+  height: 15vh;
+  max-height: 100px;
+}
+
+@media screen and (max-device-width:430px) {
+  div.aboutus-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  h1.aboutus {
+    font-size: 4vw;
+  }
+
+  p.aboutus {
+    font-size: 3vw;
+  }
+
+  div.services-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+
+  h1.services {
+    font-size: 5vw;
+  }
+
+  p.services {
+    font-size: 4vw;
+  }
+
+  h2.services {
+    font-size: 3.5vw;
+  }
+
+  ul.services {
+    font-size: 3vw;
+  }
 }
