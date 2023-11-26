@@ -186,3 +186,25 @@ Stack trace:
 #2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
 #3 {main}
   thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 39
+[26-Nov-2023 05:22:29 UTC] PHP Parse error:  syntax error, unexpected token "foreach", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 12
+[26-Nov-2023 05:31:16 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "filter_posts" not found or invalid function name in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_filter_...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php on line 324
+[26-Nov-2023 05:31:17 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "filter_posts" not found or invalid function name in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_filter_...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php on line 324
+[26-Nov-2023 05:31:17 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "filter_posts" not found or invalid function name in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_filter_...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-hook.php on line 324

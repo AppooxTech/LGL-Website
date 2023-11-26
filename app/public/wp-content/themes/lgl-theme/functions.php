@@ -82,43 +82,100 @@ add_action( 'wp_enqueue_scripts', 'products_css' );
 function enqueue_jquery() {
     wp_enqueue_script('jquery');
 }
-add_action('wp_enqueue_scripts', 'enqueue_jquery');
-
 
 function filter_posts() {
     $tag = isset($_POST['tag']) ? sanitize_text_field($_POST['tag']) : '';
 
-    $args = array(
+    $args_all = array(
+        'category_name' => 'blog',
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+    );
+
+    $args_filtered = array(
         'category_name' => 'blog',
         'tag' => $tag,
         'post_type' => 'post',
         'posts_per_page' => -1,
     );
 
-    $blog_query = new WP_Query($args);
+    $all_blogs_query = new WP_Query($args_all);
+    $filtered_blogs_query = new WP_Query($args_filtered);
 
-    // The Loop
-    if ($blog_query->have_posts()) {
-        while ($blog_query->have_posts()) {
-            $blog_query->the_post();
+    ob_start();
+
+    // Show all blog posts
+    if ($all_blogs_query->have_posts()) {
+        while ($all_blogs_query->have_posts()) {
+            $all_blogs_query->the_post();
+            $content = get_the_content();
+            $dom = new DOMDocument;
+            libxml_use_internal_errors(true);
+            $dom->loadHTML($content);
+            libxml_clear_errors();
+            $images = $dom->getElementsByTagName('img');
+            $paragraphs = $dom->getElementsByTagName('p');
             ?>
-            <div class="blog-post">
-                <h2><?php the_title(); ?></h2>
-                <div class="post-content">
-                    <?php the_content(); ?>
+            <div class="blog-item">
+                <?php echo $dom->saveHTML($images->item(0)); ?>
+                
+                <div class="blog-item-details">
+                    <h2><?php the_title(); ?></h2>
+                    <p><?php the_excerpt() ?></p>
+                    <p><?php the_author(); ?></p>
                 </div>
             </div>
             <?php
         }
-        /* Restore original Post Data */
         wp_reset_postdata();
     } else {
-        // No posts found
         echo 'No posts found';
     }
 
-    die();
+    $all_content = ob_get_clean();
+    ob_start();
+
+    // Show filtered blog posts
+    if ($filtered_blogs_query->have_posts()) {
+        while ($filtered_blogs_query->have_posts()) {
+            $filtered_blogs_query->the_post();
+            $content = get_the_content();
+            $dom = new DOMDocument;
+            libxml_use_internal_errors(true);
+            $dom->loadHTML($content);
+            libxml_clear_errors();
+            $images = $dom->getElementsByTagName('img');
+            $paragraphs = $dom->getElementsByTagName('p');
+            ?>
+            <div class="blog-item">
+                <?php echo $dom->saveHTML($images->item(0)); ?>
+                
+                <div class="blog-item-details">
+                    <h2><?php the_title(); ?></h2>
+                    <p><?php the_excerpt() ?></p>
+                    <p><?php the_author(); ?></p>
+                </div>
+            </div>
+            <?php
+        }
+        wp_reset_postdata();
+    } else {
+        echo 'No posts found';
+    }
+
+    $filtered_content = ob_get_clean();
+
+    wp_send_json(array('all' => $all_content, 'filtered' => $filtered_content));
 }
+
 
 add_action('wp_ajax_filter_posts', 'filter_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
+
+
+add_action('wp_enqueue_scripts', 'enqueue_jquery');
+add_action('wp_ajax_filter_posts', 'filter_posts');
+add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
+
+
+
