@@ -37,39 +37,34 @@
         
             // Display the very first image without a pairing
             if ($images->length > 0) {
-                echo '<div class="image-text-container first-image-container">';
-                echo '<div class="image-container">';
+                echo '<div class="main-image">';
                 echo $dom->saveHTML($images->item(0));
-                echo '</div>';
                 echo '</div>';
             }
         
             // Display the very first <p> tag without a pairing
             if ($paragraphs->length > 0) {
-                echo '<div class="image-text-container first-text-container">';
-                echo '<div class="text-container">';
+                echo '<div class="product-description">';
                 echo $dom->saveHTML($paragraphs->item(0));
                 echo '</div>';
-                echo '</div>';
             }
-        
-            // Flag to check if the first image has been processed
-            $firstImageProcessed = false;
-        
+            
+            // For loop to loop through the images and paragraphs to display them in the correct format
             for ($index = 1; $index < min($images->length, $paragraphs->length); $index++) {
                 // Determine odd or even class for the container div
                 $sectionClass = ($index % 2 === 0) ? 'even-section' : 'odd-section';
+                $side = ($index % 2 === 0) ? 'even' : 'odd';
         
                 // Create a new div container for each image and text pair
-                echo '<div class="image-text-container ' . $sectionClass . '">';
+                echo '<div class="image-text-container ' . $side. '-section' . '">';
         
                 // Display the image without a div for the first image
-                echo '<div class="image-container">';
+                echo '<div class="'.$side.'-section-img">';
                 echo $dom->saveHTML($images->item($index));
                 echo '</div>'; // Close image-container
         
                 // Display the text within a div
-                echo '<div class="text-container">';
+                echo '<div class="'.$side.'-section-text">';
                 // If there is a corresponding <p>, display it
                 echo $dom->saveHTML($paragraphs->item($index));
                 echo '</div>'; // Close text-container

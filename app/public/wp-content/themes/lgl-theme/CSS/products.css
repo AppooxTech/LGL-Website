@@ -22,7 +22,7 @@ p {
 .root-container {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 10vh;
   margin-bottom: 15vh;
 }
 
@@ -34,7 +34,7 @@ p {
 }
 
 .product-description {
-  padding: 50px 150px;
+  padding: 25px 150px;
   font-size: 32px;
   text-align: justify;
 }
@@ -46,6 +46,10 @@ p {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+.even-section {
+  flex-direction: row-reverse;
 }
 
 .text-div {
@@ -63,6 +67,11 @@ p {
 .even-section-img,
 .odd-section-img {
   flex-basis: 40vw;
+}
+
+.even-section-img > img,
+.odd-section-img > img {
+  width: 40vw;
 }
 
 .even-section-text,
