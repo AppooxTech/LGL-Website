@@ -93,7 +93,6 @@ function filter_posts() {
     );
 
     $args_filtered = array(
-
         'category_name' => 'blog',
         'tag' => $tag,
         'post_type' => 'post',
@@ -191,4 +190,5 @@ add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
 add_action('wp_enqueue_scripts', 'enqueue_jquery');
 add_action('wp_ajax_filter_posts', 'filter_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
+
 
