@@ -29,11 +29,18 @@
         if ($blog_query->have_posts()) {
             while ($blog_query->have_posts()) {
                 $blog_query->the_post();
+                $content = get_the_content();
+                $dom = new DOMDocument;
+                libxml_use_internal_errors(true);
+                $dom->loadHTML($content);
+                libxml_clear_errors();
+                $images = $dom->getElementsByTagName('img');
                 ?>
                 <div class="blog-post">
+                    <?php echo $dom->saveHTML($images->item(0)); ?>
                     <h2><?php the_title(); ?></h2>
                     <div class="post-content">
-                        <?php the_content(); ?>
+                        <p><?php the_author(); ?></p>
                     </div>
                 </div>
                 <?php
@@ -72,12 +79,6 @@
  
 
 <?php
-    echo '<div class="tags-bar">';
-    foreach ($tags as $tag) {
-        $tag_link = get_tag_link($tag->term_id);
-        echo '<a href="#" class="tag-filter" data-tag="' . esc_attr($tag->slug) . '">' . $tag->name . '</a>';
-    }
-    echo '</div>';
 
     get_footer();
  ?>

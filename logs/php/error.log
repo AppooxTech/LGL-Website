@@ -178,3 +178,11 @@ These options need to match
 [26-Nov-2023 03:07:52 UTC] PHP Parse error:  Unclosed '(' on line 86 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 87
 [26-Nov-2023 03:07:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
 [26-Nov-2023 03:07:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[26-Nov-2023 03:29:31 UTC] PHP Warning:  Undefined variable $images in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 39
+[26-Nov-2023 03:29:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function item() on null in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php:39
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#3 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 39
