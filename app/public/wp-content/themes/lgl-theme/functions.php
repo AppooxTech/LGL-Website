@@ -47,6 +47,9 @@ function enqueue_specific_css()
     if(in_category('blog')) {
         wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/blog-view.css');
     }
+    // elseif(in_category('product')){
+    //     wp_enqueue_style('products-style', get_template_directory_uri() . '/CSS/products.css');
+    // }
     // Add more conditions for other pages as needed
 }
 
