@@ -120,7 +120,7 @@
   background-color: #a3a3a3;
   padding: 0 20vw;
 
-  height: 250px;
+  height: 300px;
   /* flex-basis: 25vw; */
   gap: 40px;
   justify-content: center;
@@ -192,8 +192,13 @@
 }
 
 .related-blogs > h2 {
-  font-size: 2em;
-  color: #f7f7ff;
+  font-size: 1.2em;
+  color: #a3a3a3;
+}
+
+.related-blogs > img {
+  height: 120px;
+  width: auto;
 }
 
 .date-author,
