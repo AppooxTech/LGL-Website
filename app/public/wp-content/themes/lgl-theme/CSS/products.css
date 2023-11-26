@@ -13,13 +13,16 @@ p {
 }
 
 .main-image {
-  height: 100vh;
+  text-align: center;
+}
+.main-image > img {
+  width: 100%;
 }
 
 .root-container {
   display: flex;
   flex-direction: column;
-  gap: 15vh;
+  gap: 1vh;
   margin-bottom: 15vh;
 }
 
@@ -49,6 +52,7 @@ p {
   display: flex;
   align-items: center; /* Vertical alignment: center */
   justify-content: center; /* Horizontal alignment: center */
+  flex-basis: 40vw;
 }
 
 .even-section,
@@ -58,7 +62,7 @@ p {
 
 .even-section-img,
 .odd-section-img {
-  width: 45vw;
+  flex-basis: 40vw;
 }
 
 .even-section-text,
