@@ -1,4 +1,14 @@
-.tags-bar {
+.blog-list-container {
   margin-top: 150px;
-  color: red;
+}
+
+.tag-filter {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.tags-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }

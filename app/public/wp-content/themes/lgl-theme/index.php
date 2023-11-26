@@ -6,7 +6,10 @@
     $tags = get_tags();
 
     // Display tags as a horizontal bar
+    echo '<div class="blog-list-container">';
     echo '<div class="tags-bar">';
+    echo '<p> Tags: </p>';
+    echo '<a href="#" class="tag-filter" data-tag="all">All</a>';
     foreach ($tags as $tag) {
         $tag_link = get_tag_link($tag->term_id);
         echo '<a href="#" class="tag-filter" data-tag="' . esc_attr($tag->slug) . '">' . $tag->name . '</a>';
@@ -35,11 +38,14 @@
                 $dom->loadHTML($content);
                 libxml_clear_errors();
                 $images = $dom->getElementsByTagName('img');
+                $paragraphs = $dom->getElementsByTagName('p');
                 ?>
-                <div class="blog-post">
+                <div class="blog-item">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
-                    <h2><?php the_title(); ?></h2>
-                    <div class="post-content">
+                    
+                    <div class="blog-item-details">
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php the_excerpt() ?></p>
                         <p><?php the_author(); ?></p>
                     </div>
                 </div>
@@ -55,30 +61,37 @@
     </div>
     
     <script>
-    jQuery(document).ready(function ($) {
-        $('.tag-filter').on('click', function (e) {
-            e.preventDefault();
-            var tag = $(this).data('tag');
-    
-            $.ajax({
-                type: 'POST',
-                url: '<?php echo admin_url('admin-ajax.php'); ?>',
-                data: {
-                    action: 'filter_posts',
-                    tag: tag,
-                },
-                success: function (response) {
-                    $('#blog-posts-container').html(response);
-                },
-            });
+jQuery(document).ready(function ($) {
+    $('.tag-filter').on('click', function (e) {
+        e.preventDefault();
+        var tag = $(this).data('tag');
+
+        $.ajax({
+            type: 'POST',
+            url: '<?php echo admin_url('admin-ajax.php'); ?>',
+            data: {
+                action: 'filter_posts',
+                tag: tag,
+            },
+            success: function (response) {
+                if (tag === 'all') {
+                    // Show all blog posts
+                    $('#blog-posts-container').html(response.all);
+                } else {
+                    // Show filtered blog posts
+                    $('#blog-posts-container').html(response.filtered);
+                }
+            },
         });
     });
-    </script>
+});
+</script>
   
 
  
 
 <?php
-
+echo '</div>';
     get_footer();
+
  ?>
