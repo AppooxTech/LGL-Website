@@ -158,3 +158,8 @@ These options need to match
 [26-Nov-2023 01:44:25 UTC] PHP Warning:  Undefined variable $content in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 10
 [26-Nov-2023 01:44:25 UTC] PHP Warning:  Undefined variable $content in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 17
 [26-Nov-2023 01:59:49 UTC] PHP Parse error:  Unmatched '}' in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 79
+[26-Nov-2023 02:10:29 UTC] PHP Warning:  Undefined variable $odd in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 58
+[26-Nov-2023 02:10:29 UTC] PHP Warning:  Undefined variable $even in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 58
+[26-Nov-2023 02:10:29 UTC] PHP Warning:  Undefined variable $odd in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 58
+[26-Nov-2023 02:10:29 UTC] PHP Warning:  Undefined variable $even in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 58
+[26-Nov-2023 02:10:29 UTC] PHP Warning:  Undefined variable $odd in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-product.php on line 58
