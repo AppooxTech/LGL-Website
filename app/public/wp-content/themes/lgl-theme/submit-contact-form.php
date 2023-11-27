@@ -1,15 +1,4 @@
 <?php
-/* Template Name: Contact Us */
-// This is the Contact Us page
-?>  
-<?php
-    get_header();
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
- ?>
-
-<?php
 // Load WordPress
 require('wp-load.php');
 
@@ -60,43 +49,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     }
 }
 ?>
-
-<main class="contact-us-container">
-    <section>
-        <form class="contact-us-form" method="post" action="<?php echo esc_url(get_permalink()); ?>">
-            <h1 class="page-title">Contact Us</h1>
-
-            <div class="name-section">
-                <label for="full-name">Full Name:</label>
-                <input type="text" name="name" class="full-name" required>
-            </div>
-
-            <div class="email-section">
-                <label for="email">Email:</label>
-                <input type="email" name="email" class="email" required>
-            </div>
-
-            <div class="pNumber-section">
-                <label for="phone">Phone Number (optional):</label>
-                <input type="tel" name="number" class="phone">
-            </div>
-
-            <div class="subject-section">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" class="subject" required>
-            </div>
-
-            <div class="message-section">
-                <label for="message">Message:</label>
-                <textarea class="message" name="message" rows="6" required></textarea>
-            </div>
-            <button type="submit" name="submit">Submit</button>
-        </form>
-    </section>
-</main>
-
-
-
-<?php
-    get_footer();
- ?>
