@@ -64,25 +64,6 @@
                                 ?>
                             </tags>
                         </div>
-                        
-                        
-                        <div class="blog-item-details">
-                            
-                            <date><?php the_time('jS M Y'); ?></date>
-                            <tags>
-                                <?php 
-                                $tags_count = count($tags);
-                                foreach ($tags as $index => $tag) {
-                                    echo $tag->name;
-                                    if ($index < $tags_count - 1) {
-                                        echo ', ';
-                                    };
-                                };
-                                ?>
-                            </tags>
-                        </div>
-                        
-                        
                     </div>
                 </a>
                 <?php
