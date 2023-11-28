@@ -19,11 +19,11 @@ in order to give a value to each variable you need to follow the `"[variable nam
 
 ## Custom Button Component
 ### variables
-1. `button_txt` text desplayed on the button
+1. `button_txt` text desplayed in the button
 2. `on_click` the function that runs when the button is clicked
 
 **checkout this expample**
-```php
+```html
     <?php
         get_template_part('components/button','',['button_txt'=>'something','on_click'=>'when_clicked']);
 
@@ -33,27 +33,14 @@ in order to give a value to each variable you need to follow the `"[variable nam
     ?>
 ```
 
-## Custom input Componrnt
+## Custom Form Componrnt
 ### variables
 1. `place_holder` the displayed placeholder
 2. `type` the type of the input either `input` or `search` or `textarea`
-3. `half_sieze` a boolean value that if true the input or the searchbar will become half-sized
    
 **checkout this example**
-```php
+```HTML
     <?php 
         get_template_part('components/input','',['type'=>'input','place_holder'=>'some text']);
-    ?>
-```
-
-# Custom Carousel Component
-### variables
-1. `contents` an arry of objects of type `{image: [image link],header: [content header],description: [content description]}`
-2. `button_txt` a string that is displayed on the button
-
-**checkout this example**
-```php
-    <?php 
-        get_template_part('components/carousel','',['conntets'=>array({$image:'link', $header:'Very cool content', $desctription: "I think this content is amazing even tough it's just a test!"}),'button_txt'=>"get more info"]);
     ?>
 ```

@@ -8,9 +8,7 @@ Version: 0.1
 @import url("https://fonts.cdnfonts.com/css/right-swipe-personal-use");
 
 /* text font */
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&family=Source+Sans+3:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+3:wght@300&display=swap");
-@import url("https://fonts.cdnfonts.com/css/lexend");
+@import url("https://fonts.cdnfonts.com/css/emmeline");
 
 /* custom font */
 @import url("https://fonts.cdnfonts.com/css/southing");
@@ -24,11 +22,6 @@ Version: 0.1
   --primary: #279af1;
   --secondary: #ff312e;
   --tretary: #c49991;
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
 }
 
 h1,
@@ -68,8 +61,7 @@ body,header {
 body,
 p,
 span {
-  font-family: "Poppins", sans-serif;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "EMMELINE", sans-serif;
 }
 
 .custom-font {
