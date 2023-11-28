@@ -76,6 +76,12 @@ add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
 add_action( 'wp_enqueue_scripts', 'products_css' );
 // add_action('wp_enqueue_scripts', 'add_global_css');
 
+function add_custom_components_css()
+{
+    wp_enqueue_style('custom-button-styles', get_template_directory_uri() . '/CSS/custom-components/custom-button.css');
+    wp_enqueue_style('custom-input-styles', get_template_directory_uri() . '/CSS/custom-components/custom-input.css');
+    wp_enqueue_style('custom-carousel-styles', get_template_directory_uri() . '/CSS/custom-components/custom-carousel.css');
+}
 
 function enqueue_jquery() {
     wp_enqueue_script('jquery');
