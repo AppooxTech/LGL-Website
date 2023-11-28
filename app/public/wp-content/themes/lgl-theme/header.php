@@ -1,68 +1,170 @@
-<!DOCTYPE html>
+<?php
 
-<html <?php language_attributes(); ?>>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <meta charset="<?php bloginfo("charset")?>">
-        <meta name="viewport" content="width=device-width, initial-scale, initial-scale=1">
-        <?php wp_head(); ?>
-    </head>
+$template_directory_uri = get_template_directory_uri();
 
-    <body <?php body_class(); ?>>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+$normal_template = <<<TEXT
+    
+  <div class="logo-container">
+      <img src="$template_directory_uri/images/LGL-New-Logo.png" alt="Business-Logo" class="logo">
+      <span class="seo-hidden-text">LGL Light Guide Lund</span>
+    </div>
+    <div class="navigation-buttons-container">
+      <div class="dropdown-container">
+        <div class="hide" id="dropdown" onmouseleave="on_mouse_leave();">
+          <div class="first section">
+            <h3 class="section-header">Section</h3>
+            <span class="section-item" role="button" onclick="on_click();">item 1</span>
+            <span class="section-item" role="button" onclick="on_click();">item 2</span>
+            <span class="section-item" role="button" onclick="on_click();">item 3</span>
+          </div>
+          <div class="second section">
+            <h3 class="section-header">Section</h3>
+            <span class="section-item" role="button" onclick="on_click();">item 1</span>
+            <span class="section-item" role="button" onclick="on_click();">item 2</span>
+            <span class="section-item" role="button" onclick="on_click();">item 3</span>
+          </div>
+          <div class="third section">
+            <h2 class="section-header">Section</h3>
+              <span class="section-item" role="button" onclick="on_click();">item 1</span>
+              <span class="section-item" role="button" onclick="on_click();">item 2</span>
+              <span class="section-item" role="button" onclick="on_click();">item 3</span>
+          </div>
+        </div>
+        <div class="navigation-button" role="button" onclick="on_click();">
+          <span class="navigation-button">Products</span>
+          <img id="down-chev" src=" $template_directory_uri/images/icons/icons8-chevron-down-30.png"
+            width="20" alt="down">
+        </div>
+      </div>
+      <span class="navigation-button" role="button">Blogs</span>
+      <span class="navigation-button" role="button">Contact Us</span>
 
-    <header>
-    <nav class="header-navbar">
-        <div class="navbar">
-            <a href="<?php echo site_url() ?>">
-                <img width="150" height="90" src="<?php echo get_template_directory_uri(); ?>/images/LGL-New-Logo.png" alt="Business Logo">
-            </a>
-            
-            <div class="blog-products">
-                <div class="dropdown navbar-item"> <!-- Added class "dropdown" here -->
-                    <div class="product-container">
-                        <p class="product-dropdown navbar-item">Products</p>
-                        <!-- <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg> -->
-                        <i class="fa-solid fa-chevron-down fa-fade dropdown-icon" style="color: #511f46;"></i>
-                    </div>
-                    
-                    <div class="dropdown-content">
-                    <div class="row">
-                        <div class="column">
-                            <div class="category">Devices</div>
-                            <div class="item dropdown-text">Item 1</div>
-                            <div class="item dropdown-text">Item 2</div>
-                        </div>
-                        <div class="column">
-                            <div class="category">Softwares</div>
-                            <div class="item dropdown-text">Item 1</div>
-                            <div class="item dropdown-text">Item 2</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <div class="category">Lab Equipment</div>
-                            <div class="item dropdown-text">Item 1</div>
-                            <div class="item dropdown-text">Item 2</div>
-                        </div>
-                        <div class="column">
-                            <div class="category">Optomechanics</div>
-                            <div class="item dropdown-text">Item 1</div>
-                            <div class="item dropdown-text">Item 2</div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <a class="navbar-item" href="<?php echo site_url("/blogs-page") ?>">Blog</a>
-                <a class="contact-us navbar-item" href="<?php echo site_url("/contact-us-page") ?>">Contact Us</a>
+    </div>
+    <div class="signin-button-container">
+      <!-- put sig in button here -->
+    </div>
+  TEXT;
+
+$mobile_template = <<<TEXT
+  <div class="logo-container">
+      <img src="$template_directory_uri/images/LGL-New-Logo.png" alt="Business-Logo" class="logo">
+      <span class="seo-hidden-text">LGL Light Guide Lund</span>
+    </div>
+    <div class="menu-icon-container" onclick="on_click_menu();">
+      <img src="$template_directory_uri/images/icons/icons8-menu.svg" alt="menu" width="35" id="menu-icon">
+    </div>
+    <div id="overlay-container" class="hide">
+      <div id="menu-container" class="hide">
+        <div class="menu">
+          <button class="menu-button" onclick="on_click_products();">
+            products
+            <img src="$template_directory_uri/images/icons/icons8-chevron-down-50.png" id="down-chev" width="20">
+          </button>
+          <div id="products-list-container" class="hide">
+            <h2>Sction</h2>
+            <span>item</span>
+            <span>item</span>
+            <span>item</span>
             </div>
+          <button class="menu-button" onclick="on_click_menu();">
+            Blogs
+          </button>
+          <button class="menu-button" onclick="on_click_menu();">
+            Contact us
+          </button>
         </div>
-        <div class="navbar">
-            <a class="navbar-item sign-in" href="#">Sign In</a>
-            
-        </div>
-    </nav>
+      </div>
+      <div id="backdrop" class="hide" onclick="on_click_menu();">
+      </div>
+    </div>
+  TEXT;
 
-    </header>
-    <hr> <!-- remove this in the end -->
-    </body>
+?>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="<?php bloginfo("charset") ?>">
+  <meta name="viewport" content="width=device-width, initial-scale, initial-scale=1">
+  <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?> onload="set_template()">
+  <nav class="navbar-container" id="navbar"></nav>
+</body>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  let html_template;
+  let drop_down;
+  let down_chev;
+  let menu_icon;
+  let overlay_container;
+  let backdrop;
+  let menu_container;
+  let products_container;
+
+
+  const set_template = () => {
+    const parser = new DOMParser();
+
+    if (window.innerWidth > 430) {
+      html_template = parser.parseFromString(`<?php echo $normal_template ?>`, "text/html");
+      drop_down = html_template.getElementById('dropdown');
+      down_chev = html_template.getElementById('down_chev');
+    }
+    else {
+      html_template = parser.parseFromString(`<?php echo $mobile_template ?>`, "text/html");
+      menu_icon = html_template.getElementById('menu_icon');
+      backdrop = html_template.getElementById('backdrop');
+      menu_container = html_template.getElementById('menu-container');
+      products_container = html_template.getElementById('products-list-container');
+      overlay_container = html_template.getElementById('overlay-container');
+      down_chev = html_template.getElementById('down-chev');
+    }
+
+    navbar.append(...html_template.body.children)
+  }
+
+  const on_click = () => {
+    if (drop_down.classList.contains('hide')) {
+      drop_down.classList.remove('hide');
+      down_chev.classList.add('rotated');
+    } else if (!drop_down.classList.contains('hide')) {
+      drop_down.classList.add('hide');
+      down_chev.classList.remove('rotated');
+    }
+  }
+
+  const on_click_menu = () => {
+    if (backdrop.classList.contains('hide')) {
+      overlay_container.classList.remove('hide');
+      backdrop.classList.remove('hide');
+      menu_container.classList.remove('hide');
+    } else {
+      overlay_container.classList.add('hide');
+      menu_container.classList.add('hide');
+      backdrop.classList.add('hide');
+    }
+  }
+
+  const on_click_products = () => {
+    if (products_container.classList.contains('hide')){
+      products_container.classList.remove('hide');
+      down_chev.classList.add('rotated');
+    }
+    else{
+      products_container.classList.add('hide');
+      down_chev.classList.remove('rotated');
+    }
+  }
+
+  const on_mouse_leave = () => {
+    timeout = setTimeout(() => {
+      if (!drop_down.classList.contains('hide')) {
+        drop_down.classList.add('hide');
+        down_chev.classList.remove('rotated')
+      }
+      clearTimeout(timeout);
+    }, 200)
+  }
+</script>

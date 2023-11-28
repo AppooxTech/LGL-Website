@@ -74,7 +74,7 @@ add_filter('single_template', 'custom_single_template');
 add_action('wp_enqueue_scripts', 'enqueue_specific_css');
 add_action('wp_enqueue_scripts', 'enqueue_front_page_css');
 add_action( 'wp_enqueue_scripts', 'products_css' );
-// add_action('wp_enqueue_scripts', 'add_global_css');
+add_action('wp_enqueue_scripts', 'add_global_css');
 
 function add_custom_components_css()
 {
@@ -88,6 +88,8 @@ function enqueue_jquery() {
 }
 
 function filter_posts() {
+    $permalink='';
+
     $tag = isset($_POST['tag']) ? sanitize_text_field($_POST['tag']) : '';
 
     $args_all = array(
