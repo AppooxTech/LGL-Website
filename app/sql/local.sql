@@ -327,7 +327,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=303 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -352,7 +352,7 @@ INSERT INTO `wp_postmeta` VALUES (13,9,'_wp_desired_post_slug','contact-us');
 INSERT INTO `wp_postmeta` VALUES (14,15,'footnotes','');
 INSERT INTO `wp_postmeta` VALUES (16,15,'_wp_page_template','tempelate-contact-us.php');
 INSERT INTO `wp_postmeta` VALUES (17,11,'_wp_page_template','tempelate-blogs-page.php');
-INSERT INTO `wp_postmeta` VALUES (18,21,'_edit_lock','1700982150:1');
+`wp_postmeta` VALUES (18,21,'_edit_lock','1700982150:1');
 INSERT INTO `wp_postmeta` VALUES (19,22,'_wp_attached_file','2023/11/space3.jpg');
 INSERT INTO `wp_postmeta` VALUES (20,22,'_wp_attachment_metadata','a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1440;s:4:\"file\";s:18:\"2023/11/space3.jpg\";s:8:\"filesize\";i:533618;s:5:\"sizes\";a:6:{s:6:\"medium\";a:5:{s:4:\"file\";s:18:\"space3-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:4971;}s:5:\"large\";a:5:{s:4:\"file\";s:19:\"space3-1024x576.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:59511;}s:9:\"thumbnail\";a:5:{s:4:\"file\";s:18:\"space3-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:2446;}s:12:\"medium_large\";a:5:{s:4:\"file\";s:18:\"space3-768x432.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:432;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:35181;}s:9:\"1536x1536\";a:5:{s:4:\"file\";s:19:\"space3-1536x864.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:864;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:122253;}s:9:\"2048x2048\";a:5:{s:4:\"file\";s:20:\"space3-2048x1152.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1152;s:9:\"mime-type\";s:10:\"image/jpeg\";s:8:\"filesize\";i:200541;}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
 INSERT INTO `wp_postmeta` VALUES (21,23,'_wp_attached_file','2023/11/PLC-Image.jpg');
@@ -658,7 +658,8 @@ LOCK TABLES `wp_term_relationships` WRITE;
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */;
 INSERT INTO `wp_term_relationships` VALUES (1,1,0);
 INSERT INTO `wp_term_relationships` VALUES (6,2,0);
-INSERT INTO `wp_term_relationships` VALUES (21,3,0);
+
+SERT INTO `wp_term_relationships` VALUES (21,3,0);
 INSERT INTO `wp_term_relationships` VALUES (55,4,0);
 INSERT INTO `wp_term_relationships` VALUES (55,5,0);
 INSERT INTO `wp_term_relationships` VALUES (55,6,0);
@@ -694,7 +695,7 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -865,5 +866,4 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2023-11-26  8:05:41
+-- Dump completed on 2023-11-07 22:34:06
