@@ -1,7 +1,3 @@
-.blog-list-container {
-  margin-top: 200px;
-}
-
 .blog-posts-container {
   display: flex;
   flex-direction: column;
