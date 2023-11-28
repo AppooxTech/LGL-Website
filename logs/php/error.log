@@ -322,3 +322,4 @@ Stack trace:
 [27-Nov-2023 07:45:21 UTC] PHP Warning:  Undefined variable $permalink in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 117
 [27-Nov-2023 07:45:21 UTC] PHP Warning:  Undefined variable $permalink in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 155
 [27-Nov-2023 07:45:21 UTC] PHP Warning:  Undefined variable $permalink in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 155
+[28-Nov-2023 23:16:54 UTC] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 11

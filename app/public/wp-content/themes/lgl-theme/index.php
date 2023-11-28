@@ -7,8 +7,10 @@
 
     // Display tags as a horizontal bar
     echo '<div class="blog-list-container">';
+    echo '<div class="page-title-container">';
+    echo '<p class="page-title">Blogs</p>';
+    echo '</div>';
     echo '<div class="tags-bar">';
-    echo '<p class="tag-title"> Tags: </p>';
     echo '<a href="#" class="tag-filter" data-tag="all">All</a>';
     foreach ($tags as $tag) {
         $tag_link = get_tag_link($tag->term_id);
