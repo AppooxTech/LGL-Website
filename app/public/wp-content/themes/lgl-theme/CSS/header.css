@@ -1,9 +1,28 @@
+nav.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 20vh;
+  max-height: 200px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: var(--light);
+  border-bottom: var(--dark) solid 1px;
+  z-index: 10;
+}
+
 div.logo-container {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
+}
+
+span.seo-hidden-text {
+  visibility: hidden;
+  display: none;
 }
 
 img.logo {
@@ -71,6 +90,14 @@ div.navigation-button > img#down-chev.rotated {
   transform: rotate(-180deg);
 }
 
+div.signin-button-container {
+  height: 80%;
+  width: 15%;
+  padding: 30px;
+  align-self: center;
+  margin-top: 20px;
+}
+
 div.dropdown-container {
   height: 100vh;
   display: flex;
@@ -106,7 +133,50 @@ div#dropdown.hide {
   display: none;
 }
 
+div.section {
+  display: flex;
+  grid-column: span 3;
+  grid-row: span 6;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-around;
+  padding-left: 12px;
+}
+
+div.section.first {
+  grid-column: span 3;
+  grid-row: span 6;
+}
+
+div.section.second {
+  grid-column: 4/7;
+  grid-row: span 6;
+}
+
+div.section.third {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+h3.section-header {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+span.section-item {
+  color: var(--dark-grey);
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 75%;
+  margin-left: 10px;
+}
+
+span.section-item:hover {
+  opacity: 100%;
+}
+
 /* mobile styles */
+
 div.menu-icon-container {
   width: 5%;
   height: 100%;
