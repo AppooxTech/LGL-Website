@@ -323,3 +323,36 @@ Stack trace:
 [27-Nov-2023 07:45:21 UTC] PHP Warning:  Undefined variable $permalink in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 155
 [27-Nov-2023 07:45:21 UTC] PHP Warning:  Undefined variable $permalink in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\functions.php on line 155
 [28-Nov-2023 23:16:54 UTC] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\index.php on line 11
+[28-Nov-2023 23:44:33 UTC] PHP Warning:  Undefined array key 0 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 59
+[28-Nov-2023 23:45:59 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 59
+[28-Nov-2023 23:47:26 UTC] PHP Warning:  Undefined array key 0 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 59
+[28-Nov-2023 23:52:40 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 53
+[28-Nov-2023 23:52:40 UTC] PHP Warning:  Undefined array key 2 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 53
+[29-Nov-2023 00:08:03 UTC] PHP Warning:  Undefined variable $htmlContent in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 52
+[29-Nov-2023 00:13:43 UTC] PHP Warning:  Undefined variable $content in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 15
+[29-Nov-2023 00:14:01 UTC] PHP Parse error:  syntax error, unexpected variable "$imageUrls" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+[29-Nov-2023 00:14:12 UTC] PHP Parse error:  syntax error, unexpected variable "$imageUrls" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 23
+[29-Nov-2023 00:15:32 UTC] PHP Warning:  Undefined array key 0 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 25
+[29-Nov-2023 00:15:45 UTC] PHP Warning:  Undefined array key 1 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 25
+[29-Nov-2023 00:17:31 UTC] PHP Warning:  Undefined array key 0 in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 30
+[29-Nov-2023 00:17:55 UTC] PHP Warning:  Undefined variable $first_img in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 55
+[29-Nov-2023 00:20:05 UTC] PHP Warning:  Undefined variable $textContent in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 53
+[29-Nov-2023 00:44:51 UTC] PHP Parse error:  syntax error, unexpected variable "$dom" in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 22
+[29-Nov-2023 00:50:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_zip.dll' (tried: C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_zip.dll (The specified module could not be found), C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_php_zip.dll.dll (The specified module could not be found)) in Unknown on line 0
+[29-Nov-2023 00:50:04 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_zip.dll' (tried: C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_zip.dll (The specified module could not be found), C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_php_zip.dll.dll (The specified module could not be found)) in Unknown on line 0
+[29-Nov-2023 01:12:38 UTC] PHP Fatal error:  Uncaught DOMException: Not Found Error in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:39
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php(39): DOMNode->removeChild(Object(DOMElement))
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#3 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#4 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 39
+[29-Nov-2023 01:12:54 UTC] PHP Fatal error:  Uncaught DOMException: Not Found Error in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php:39
+Stack trace:
+#0 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php(39): DOMNode->removeChild(Object(DOMElement))
+#1 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Abdul ...')
+#2 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Abdul ...')
+#3 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
+#4 {main}
+  thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 39
