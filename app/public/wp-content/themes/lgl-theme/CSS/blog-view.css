@@ -318,7 +318,7 @@
   .related-blog-content {
     display: flex;
     flex-direction: column;
-    padding: 0 20vw;
+    padding: 0 15vw;
 
     gap: 40px;
     justify-content: center;
