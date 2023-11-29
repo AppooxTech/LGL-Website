@@ -1,0 +1,104 @@
+
+/* carousel layout styles */
+div.carousel-container {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light);
+}
+
+button.carousel-btn {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--light);
+}
+
+div.carousel-view {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+}
+
+div.carousel-contents-container {
+    display: flex;
+    height: 100%;
+    width: min-content;
+    justify-content: space-between;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    z-index: -1;
+}
+
+div.carousel-contents-container::-webkit-scrollbar,
+div.carousel-view::-webkit-scrollbar {
+    appearance: none;
+}
+
+div.carousel-single-content-container {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    scroll-snap-align: center;
+}
+
+
+/* carousel content discription styles */
+div.carousel-content-description-container {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+h2.carousel-content-description-header {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-left: 20px;
+}
+
+p.carousel-content-description-body {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+button.carousel-content-button {
+    height: 10%;
+    width: 70%;
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* carousel content image styles */
+div.carousel-content-image-container {
+    order: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+}
+
+div.carousel-content-image-container> img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
