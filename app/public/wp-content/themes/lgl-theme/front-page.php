@@ -1,11 +1,22 @@
 <?php
-$carousel_contents = [['header' => 'HYSPIM', 'description' => 'HYSPIM DESC', 'image' => get_template_directory_uri() . '/images/HYSPIM.png']];
+$carousel_contents = [
+    [
+        'name' => 'HYSPIM',
+        'description' => 'HYSPIM DESC lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumasdadasdasdlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum',
+        'image' => get_template_directory_uri() . '/images/img2.jpg'
+    ],
+    [
+        'name' => 'HYSPIM',
+        'description' => 'HYSPIM DESC lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumasdadasdasdlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum',
+        'image' => get_template_directory_uri() . '/images/img4.jpg'
+    ]
+];
 ?>
 
 <div class="front-page-container">
     <?php get_header(); ?>
     <section class="body-container">
-        <!-- <?php get_template_part("components/carousel", '', ['contents' => $carousel_contents]); ?> -->
+        <?php get_template_part("components/carousel", '', ['contents' => $carousel_contents]); ?>
         <div class="aboutus-container aboutus-background">
             <h1 class="aboutus">Our mission is to turn your idea into reality</h1>
             <section class="aboutus">

@@ -1,6 +1,7 @@
 <?php
 $button_txt = 'Button';
 $on_click = null;
+$custom_class = '';
 
 if (isset($args)) {
     if (isset($args['button_txt'])) {
@@ -9,10 +10,13 @@ if (isset($args)) {
     if (isset($args['on_click'])) {
         $on_click = $args['on_click'];
     }
+    if (isset($args['custom_class'])) {
+        $custom_class = $args['custom_class'];
+    }
 }
 ?>
 
-<button id="custom-button" onmousedown="on_mouse_down()" onmouseup="on_mouse_up()" onclick="<?php ($on_click) ? call_user_func($on_click) : '' ?>"><?php echo esc_html($button_txt) ?></button>
+<button id="custom-button" class="<?php echo $custom_class; ?>" onmousedown="on_mouse_down()" onmouseup="on_mouse_up()" onclick="<?php ($on_click) ? call_user_func($on_click) : '' ?>"><?php echo esc_html($button_txt) ?></button>
 
 <script>
     const button = document.getElementById('custom-button');
@@ -27,7 +31,7 @@ if (isset($args)) {
 </script>
 
 <style>
-    button {
+    button#custom-button {
         outline: 2px solid var(--dark);
         border: 2px solid var(--dark);
         background-color: var(--light);
@@ -39,7 +43,7 @@ if (isset($args)) {
         font-size: x-large;
     }
 
-    button:hover {
+    button#custom-button:hover {
         outline-width: 4px;
         outline-color: var(--dark);
         border-color: var(--light);
@@ -47,7 +51,7 @@ if (isset($args)) {
         background-color: var(--dark);
     }
 
-    button.clicked {
+    button#custom-button.clicked {
         border-width: 6px;
     }
 </style>
