@@ -19,6 +19,7 @@ strong {
 /* All css for the container of the footer and the contents besides the powered-by sectoin */
 .footer-container {
   background-color: #272829;
+  height: 250px;
 }
 
 /* Center the footer content */

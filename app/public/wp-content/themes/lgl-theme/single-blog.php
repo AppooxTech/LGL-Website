@@ -73,26 +73,6 @@
     
         <div class="content-container">
             <?php 
-                // $sub_content = get_the_content();
-
-
-
-
-            // Extract image URLs
-            // $imageUrls = [];
-            // preg_match_all('/<img src="([^"]*)" alt="([^"]*)" \/>/', $content, $matches);
-            // foreach ($matches[1] as $imageUrl) {
-            //     $imageUrl = '<img src="' . $imageUrl . '" alt="" />';
-            //     array_push($imageUrls, $imageUrl);
-            // }
-            
-            // // Extract text content
-            // $textContent = preg_replace('/<img src="([^"]*)" alt="([^"]*)" \/>/', '', $content);
-            
-            // // Display images
-            // foreach ($imageUrls as $imageUrl) {
-            //     echo $imageUrl;
-            // }
             
             // Display text
             echo '<p>' . $modifiedContent . '</p>';
@@ -105,13 +85,17 @@
          ?>
 
         <div class="related-blog-container">
+            <div>
+                <p class="related-blogs-title">Related Blogs</p>
+            </div>
+            <div class= "related-blog-content">
             <?php 
                 $related_counter= 0;
                 if ($related_blogs->have_posts()) {
                     while ($related_blogs->have_posts()) {
                         $related_counter++;
                         $related_blogs->the_post();
-                        if (get_the_title() != $topic && $related_counter < 5){
+                        if (get_the_title() != $topic && $related_counter < 3){
                             $sub_content = get_the_content();
                             $dom = new DOMDocument;
                             libxml_use_internal_errors(true);
@@ -120,37 +104,41 @@
                             $images = $dom->getElementsByTagName('img');
                             $paragraphs = $dom->getElementsByTagName('p');
                             ?>
-                            <a href="<?php echo get_permalink(); ?>">
+                            <a class="related-blogs" href="<?php echo get_permalink(); ?>">
                                 
-                                <div class="related-blogs">
+                            
+                                <div class="relate-blogs-img">
                                     <?php echo $dom->saveHTML($images->item(0)); ?>
-                                    <div class="related-blogs-details">
-                                        <h2><?php echo get_the_title(); ?></h2>
-                                        <tags>
-                                        <?php 
-                                            $tags = get_the_tags();
-                                            $tags_count = count($tags);
-                                            foreach ($tags as $index => $tag) {
-                                                echo $tag->name;
-                                                if ($index < $tags_count - 1) {
-                                                    echo ', ';
-                                                }
-                                            }
-                                        ?>
-                                        </tags>
-                                        <div class="date-author">
-                                            <p><?php echo get_the_time('jS M Y'); ?></p>
-                                            <p><?php echo get_the_author(); ?></p>
-                                        </div>
-                                    </div>
-
                                 </div>
-                                </a>
+                                
+                                <div class="related-blogs-details">
+                                    <h2><?php echo get_the_title(); ?></h2>
+                                    <tags>
+                                    <?php 
+                                        $tags = get_the_tags();
+                                        $tags_count = count($tags);
+                                        foreach ($tags as $index => $tag) {
+                                            echo $tag->name;
+                                            if ($index < $tags_count - 1) {
+                                                echo ', ';
+                                            }
+                                        }
+                                    ?>
+                                    </tags>
+                                    <div class="date-author">
+                                        <p><?php echo get_the_time('jS M Y'); ?></p>
+                                        <p><?php echo get_the_author(); ?></p>
+                                    </div>
+                                </div>
+
+                                
+                            </a>
                             <?php 
                         }
                     }
                 }
              ?>
+        </div>
         </div>
 
     
