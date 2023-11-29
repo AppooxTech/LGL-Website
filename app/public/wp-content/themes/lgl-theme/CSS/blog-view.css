@@ -341,6 +341,23 @@
     border-radius: 10px;
   }
 
+  .related-blogs-details > h2 {
+    /* font-size: 1.2em; */
+    font-size: 1.5vh;
+  }
+
+  .related-blogs-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vh;
+    padding: 0 10px;
+    margin-bottom: 5px;
+
+    font-size: 1vh;
+    color: #a2a2a2;
+  }
+
   .relate-blogs-img {
     background-color: #efeeee;
     display: flex;
