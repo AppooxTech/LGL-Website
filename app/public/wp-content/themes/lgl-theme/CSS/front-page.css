@@ -22,12 +22,13 @@ section.body-container {
 }
 
 div.aboutus-container {
-  min-height: 100vh;
+  height: max-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 5%;
   gap: 12px;
   color: var(--light);
 }
@@ -50,10 +51,11 @@ p.aboutus {
 
 div.services-container {
   width: 100%;
-  min-height: 100vh;
+  height: max-content;
   padding-top: 20px;
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 5%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -120,20 +122,29 @@ section.footer-container {
   div.aboutus-container {
     padding-left: 5%;
     padding-right: 5%;
+    max-height: min-content;
+  }
+
+  div.aboutus-container.aboutus-background::before {
+    background-size: contain;
+    background-position: 90% 0 !important;
   }
 
   h1.aboutus {
-    font-size: 4vw;
+    font-size: 5vw;
+    font-weight: 900;
   }
 
   p.aboutus {
-    font-size: 3vw;
+    font-size: 3.8vw;
+    line-height: 20px;
   }
 
   div.services-container {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    min-height: min-content;
   }
 
   h1.services {
@@ -142,6 +153,7 @@ section.footer-container {
 
   p.services {
     font-size: 4vw;
+    line-height: 25px;
   }
 
   h2.services {

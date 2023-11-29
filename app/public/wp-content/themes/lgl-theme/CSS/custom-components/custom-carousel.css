@@ -98,3 +98,38 @@ div.carousel-content-image-container> img {
     height: 100%;
 }
 
+@media screen and (max-device-width:430px) {
+    div.carousel-container {
+        width: 100%;
+        height: 85vh;
+    }
+    
+    div.carousel-single-content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    div.carousel-content-description-container {
+        order: 2;
+        width: 100%;
+        height: min-content;
+    }
+
+    h2.carousel-content-description-header {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    p.carousel-content-description-body {
+        font-size: 4.8vw;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    div.carousel-content-image-container {
+        order: 1;
+        width: 100%;
+        height: min-content;
+    }
+}

@@ -90,7 +90,8 @@ $carousel_contents = [
         height: 100%;
         background-image: url(<?php echo get_template_directory_uri() . '/images/img1.jpg' ?>);
         background-size: cover;
-        position: absolute;
+        background-position: 80% 0;
+        position: fixed;
         filter: brightness(50%);
         top: 0px;
         left: 0px;
