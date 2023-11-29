@@ -10,7 +10,7 @@ $normal_template = <<<TEXT
     </div>
     <div class="navigation-buttons-container">
       <div class="dropdown-container">
-        <div class="hide" id="dropdown" onmouseleave="on_mouse_leave();">
+        <div class="hide" id="dropdown">
           <div class="first section">
             <h3 class="section-header">Section</h3>
             <span class="section-item" role="button" onclick="on_click();">item 1</span>
@@ -32,8 +32,8 @@ $normal_template = <<<TEXT
         </div>
         <div class="navigation-button" role="button" onclick="on_click();">
           <span class="navigation-button">Products</span>
-          <img id="down-chev" src=" $template_directory_uri/images/icons/icons8-chevron-down-30.png"
-            width="20" alt="down">
+          <img id="down-chev" src=" $template_directory_uri/images/icons/icons8-chevron-down-50-black.png"
+            width="30" alt="down">
         </div>
       </div>
       <span class="navigation-button" onclick="redirect('blogs');" role="button">Blogs</span>
@@ -111,7 +111,7 @@ $mobile_template = <<<TEXT
     if (window.innerWidth > 430) {
       html_template = parser.parseFromString(`<?php echo $normal_template ?>`, "text/html");
       drop_down = html_template.getElementById('dropdown');
-      down_chev = html_template.getElementById('down_chev');
+      down_chev = html_template.getElementById('down-chev');
     }
     else {
       html_template = parser.parseFromString(`<?php echo $mobile_template ?>`, "text/html");
@@ -137,13 +137,13 @@ $mobile_template = <<<TEXT
   }
 
   const on_click = () => {
-    if (drop_down.classList.contains('hide')) {
-      drop_down.classList.remove('hide');
-      down_chev.classList.add('rotated');
-    } else if (!drop_down.classList.contains('hide')) {
-      drop_down.classList.add('hide');
-      down_chev.classList.remove('rotated');
-    }
+      if (drop_down.classList.contains('hide')) {
+        drop_down.classList.remove('hide');
+        down_chev.classList.add('rotated');
+      } else if (!drop_down.classList.contains('hide')) {
+        drop_down.classList.add('hide');
+        down_chev.classList.remove('rotated');
+      }
   }
 
   const on_click_menu = () => {
@@ -167,15 +167,5 @@ $mobile_template = <<<TEXT
       products_container.classList.add('hide');
       down_chev.classList.remove('rotated');
     }
-  }
-
-  const on_mouse_leave = () => {
-    timeout = setTimeout(() => {
-      if (!drop_down.classList.contains('hide')) {
-        drop_down.classList.add('hide');
-        down_chev.classList.remove('rotated')
-      }
-      clearTimeout(timeout);
-    }, 200)
   }
 </script>
