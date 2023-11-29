@@ -2,21 +2,17 @@
 
 /* OVERALL CSS DIVS */
 
-.blog-text {
-  color: red;
-}
-
-.container {
+/* .container {
   padding-top: 155px;
-}
+} */
 
 /* TOPIC SECTION */
 
 .blog-topic {
-  height: 200px;
-  background-color: #a3a3a3;
-  padding: 2em 0;
-  padding-left: 20vw;
+  height: 81vh;
+  background-color: #000000;
+  padding: 2em 20vw;
+  /* padding-left: 20vw; */
   color: #f7f7ff;
 
   display: flex;
@@ -25,7 +21,7 @@
 }
 
 .blog-topic > h1 {
-  font-size: 4.5rem;
+  font-size: calc(1.5vh + 1.5vw);
   border-left: 0.1em solid rgb(86, 0, 0);
   padding-left: 5px;
 }
@@ -44,6 +40,10 @@
   flex-direction: column;
   gap: 2em;
   /* flex-basis: 60vw; */
+}
+
+.cover-img {
+  height: 55vh;
 }
 
 /* Blog Body */
@@ -75,7 +75,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* text-align: justify; */
   font-size: 1.5rem;
-  padding: 0 20vw;
+  padding: 0 26vw;
 
   word-spacing: 5px;
 }
@@ -116,70 +116,76 @@
 
 .related-blog-container {
   display: flex;
+  flex-direction: column;
+  background-color: #000000;
+
+  gap: 5vh;
+  height: 85vh;
+}
+
+.related-blog-content {
+  display: flex;
   flex-direction: row;
-  background-color: #a3a3a3;
   padding: 0 20vw;
 
-  height: 300px;
-  /* flex-basis: 25vw; */
   gap: 40px;
   justify-content: center;
-  align-items: center;
-
-  margin-bottom: 50px;
 }
-
-/* Related blogs items */
-.related-blog-container > a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: normal;
-  background-color: #f7f7ff;
-  height: 250px;
-
-  border-radius: 5px;
-  /* padding: 20px; */
-}
-
-.blog-img > img {
-  width: 35vw;
-}
-
-.blog-img {
-  text-align: center;
-  margin-bottom: -1.7em;
-}
-
-.image-text {
-  padding: 0 27vw;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* text-align: center; */
-}
-
-/* Related Blogs */
 
 .related-blogs {
   display: flex;
   flex-direction: column;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 15vw;
+  /* width: 15vw; */
 
   gap: 10px;
+  justify-content: space-between;
+
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  background-color: #f7f7ff;
+  height: 65vh;
+  width: 58vh;
+
+  border-radius: 10px;
 }
+
 .related-blogs-details {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1vh;
+  padding: 0 10px;
+  margin-bottom: 5px;
+
+  font-size: calc(0.5vh + 0.5vw);
+  color: #a2a2a2;
 }
 
-.related-blogs > h2 {
-  font-size: 1.2em;
-  color: #a3a3a3;
+.relate-blogs-img {
+  background-color: #efeeee;
+  display: flex;
+
+  align-items: center;
+  /* max-height: 50vh; */
+  height: 55vh;
 }
 
-.related-blogs > img {
-  height: 120px;
-  width: auto;
+.relate-blogs-img > img {
+  width: 100%;
+  max-height: 55vh;
+  /* width: auto; */
+}
+
+.related-blogs-title {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 5rem;
+
+  font-style: italic;
 }
 
 .date-author,
@@ -191,14 +197,10 @@
   font-size: 1.2em;
 }
 
-.related-blogs > h2 {
-  font-size: 1.2em;
-  color: #a3a3a3;
-}
-
-.related-blogs > img {
-  height: 120px;
-  width: auto;
+.related-blogs-details > h2 {
+  /* font-size: 1.2em; */
+  font-size: calc(0.8vh + 0.8vw);
+  color: rgb(0, 0, 0);
 }
 
 .date-author,
@@ -215,7 +217,7 @@
 .reference-title {
   font-weight: bold;
   font-size: 1.2rem;
-  padding: 0 20vw;
+  padding: 0 26vw;
   margin-bottom: -1em;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -225,7 +227,7 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: italic;
-  padding: 0 20vw;
+  padding: 0 26vw;
   margin-bottom: -1em;
 }
 
@@ -233,4 +235,148 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
+}
+
+@media screen and (max-device-width: 430px) {
+  .cover-img {
+    height: auto;
+    width: 80vw;
+  }
+
+  .blog-topic {
+    height: 60vh;
+    padding: 2em 10vw;
+    /* padding-left: 20vw; */
+    color: #f7f7ff;
+  }
+
+  .sub-topic-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    font-size: 1rem;
+  }
+
+  .blog-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0vh 0vw;
+    /* margin-right: 8em;
+    margin-left: 2em; */
+    justify-content: center;
+  }
+
+  .intro-text,
+  .body-text {
+    /* font-family: "Libre Baskerville", serif; */
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    /* text-align: justify; */
+    font-size: 1rem;
+    padding: 0 15vw;
+    text-align: justify;
+
+    word-spacing: 5px;
+  }
+
+  .blog-img > img {
+    width: 65vw;
+  }
+
+  .blog-img {
+    text-align: center;
+    margin-bottom: -1.7em;
+  }
+
+  .image-text {
+    font-size: 0.8rem;
+    padding: 0 15vw;
+    /* text-align: center; */
+  }
+
+  .reference-title {
+    padding: 0 15vw;
+    margin-bottom: -1em;
+  }
+
+  .reference-item {
+    padding: 0 15vw;
+    margin-bottom: -1em;
+  }
+
+  .related-blog-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5vh;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .related-blog-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15vw;
+
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .related-blogs {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    background-color: #f7f7ff;
+    height: 35vh;
+    width: 30vh;
+
+    border-radius: 10px;
+  }
+
+  .related-blogs-details > h2 {
+    /* font-size: 1.2em; */
+    font-size: 1.5vh;
+  }
+
+  .related-blogs-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vh;
+    padding: 0 10px;
+    margin-bottom: 5px;
+
+    font-size: 1vh;
+    color: #a2a2a2;
+  }
+
+  .relate-blogs-img {
+    background-color: #efeeee;
+    display: flex;
+
+    align-items: center;
+    /* max-height: 50vh; */
+    height: 25vh;
+  }
+
+  .relate-blogs-img > img {
+    width: 100%;
+    max-height: 40vh;
+    /* width: auto; */
+  }
+
+  .related-blogs-title {
+    padding-top: 10px;
+    font-size: 2.5rem;
+
+    font-style: italic;
+  }
 }

@@ -121,6 +121,7 @@ function filter_posts() {
         while ($all_blogs_query->have_posts()) {
             $all_blogs_query->the_post();
             $content = get_the_content();
+            $permalink = get_the_permalink();
             $dom = new DOMDocument;
             libxml_use_internal_errors(true);
             $dom->loadHTML($content);
@@ -159,6 +160,7 @@ function filter_posts() {
         while ($filtered_blogs_query->have_posts()) {
             $filtered_blogs_query->the_post();
             $content = get_the_content();
+            $permalink = get_the_permalink();
             $dom = new DOMDocument;
             libxml_use_internal_errors(true);
             $dom->loadHTML($content);
@@ -193,10 +195,6 @@ function filter_posts() {
 
     wp_send_json(array('all' => $all_content, 'filtered' => $filtered_content));
 }
-
-
-add_action('wp_ajax_filter_posts', 'filter_posts');
-add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
 
 
 add_action('wp_enqueue_scripts', 'enqueue_jquery');
