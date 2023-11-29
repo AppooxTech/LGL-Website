@@ -1,13 +1,12 @@
 <?php
 /* Template Name: Contact Us */
 // This is the Contact Us page
-?>  
+?>
 <?php
-    get_header();
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
- ?>
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 
 <?php
 // Load WordPress
@@ -20,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     // Include PHPMailer autoloader
     require 'vendor/autoload.php';
 
-    $name    = sanitize_text_field($_POST['name']);
-    $email   = sanitize_email($_POST['email']);
-    $number  = sanitize_text_field($_POST['number']);
+    $name = sanitize_text_field($_POST['name']);
+    $email = sanitize_email($_POST['email']);
+    $number = sanitize_text_field($_POST['number']);
     $subject = sanitize_text_field($_POST['subject']);
     $message = esc_textarea($_POST['message']);
 
@@ -33,12 +32,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         // Server settings
         $mail->SMTPDebug = 0; // Can be set to 2 for debugging
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'your_email@gmail.com'; // Your Gmail email
-        $mail->Password   = 'your_gmail_password'; // Your Gmail password
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'your_email@gmail.com'; // Your Gmail email
+        $mail->Password = 'your_gmail_password'; // Your Gmail password
         $mail->SMTPSecure = 'tls';
-        $mail->Port       = 587;
+        $mail->Port = 587;
 
         // Sender info
         $mail->setFrom('your_email@gmail.com', 'Your Name'); // Your Name
@@ -49,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         // Email content
         $mail->isHTML(false);
         $mail->Subject = $subject;
-        $mail->Body    = "Name: $name\nEmail: $email\nPhone: $number\n\n$message";
+        $mail->Body = "Name: $name\nEmail: $email\nPhone: $number\n\n$message";
 
         // Send the email
         $mail->send();
@@ -62,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 ?>
 
 <main class="contact-us-container">
-    <section>
+    <?php get_header(); ?>
+    <section class="form-container">
         <form class="contact-us-form" method="post" action="<?php echo esc_url(get_permalink()); ?>">
             <h1 class="page-title">Contact Us</h1>
 
@@ -93,10 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             <button type="submit" name="submit">Submit</button>
         </form>
     </section>
-</main>
-
-
-
-<?php
+    <?php
     get_footer();
- ?>
+    ?>
+</main>

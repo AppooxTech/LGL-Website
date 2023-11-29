@@ -4,7 +4,7 @@ $template_directory_uri = get_template_directory_uri();
 
 $normal_template = <<<TEXT
     
-  <div class="logo-container">
+  <div class="logo-container" onclick="redirect();" role="button">
       <img src="$template_directory_uri/images/LGL-New-Logo.png" alt="Business-Logo" class="logo">
       <span class="seo-hidden-text">LGL Light Guide Lund</span>
     </div>
@@ -36,8 +36,8 @@ $normal_template = <<<TEXT
             width="20" alt="down">
         </div>
       </div>
-      <span class="navigation-button" role="button">Blogs</span>
-      <span class="navigation-button" role="button">Contact Us</span>
+      <span class="navigation-button" onclick="redirect('blogs');" role="button">Blogs</span>
+      <span class="navigation-button" onclick="redirect('contact-us');" role="button">Contact Us</span>
 
     </div>
     <div class="signin-button-container">
@@ -46,7 +46,8 @@ $normal_template = <<<TEXT
   TEXT;
 
 $mobile_template = <<<TEXT
-  <div class="logo-container">
+
+    <div class="logo-container" onclick="redirect();" role="button">
       <img src="$template_directory_uri/images/LGL-New-Logo.png" alt="Business-Logo" class="logo">
       <span class="seo-hidden-text">LGL Light Guide Lund</span>
     </div>
@@ -66,10 +67,10 @@ $mobile_template = <<<TEXT
             <span>item</span>
             <span>item</span>
             </div>
-          <button class="menu-button" onclick="on_click_menu();">
+          <button class="menu-button" onclick="on_click_menu(); redirect('blogs');">
             Blogs
           </button>
-          <button class="menu-button" onclick="on_click_menu();">
+          <button class="menu-button" onclick="on_click_menu(); redirect('contact-us');">
             Contact us
           </button>
         </div>
@@ -125,6 +126,16 @@ $mobile_template = <<<TEXT
     navbar.append(...html_template.body.children)
   }
 
+  const redirect = (link = '') => {
+    if (link === 'contact-us') {
+      window.location = "<?php echo site_url("contact-us-page"); ?>";
+    } else if (link === 'blogs') {
+      window.location = "<?php echo site_url('blogs-page'); ?>";
+    } else if (!link) {
+      window.location = "<?php echo site_url(''); ?>";
+    }
+  }
+
   const on_click = () => {
     if (drop_down.classList.contains('hide')) {
       drop_down.classList.remove('hide');
@@ -148,11 +159,11 @@ $mobile_template = <<<TEXT
   }
 
   const on_click_products = () => {
-    if (products_container.classList.contains('hide')){
+    if (products_container.classList.contains('hide')) {
       products_container.classList.remove('hide');
       down_chev.classList.add('rotated');
     }
-    else{
+    else {
       products_container.classList.add('hide');
       down_chev.classList.remove('rotated');
     }

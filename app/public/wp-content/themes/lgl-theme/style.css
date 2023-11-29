@@ -35,9 +35,10 @@ button {
   font-family: "Lexend", sans-serif;
 }
 
-body {
+body,html {
   width: min-content;
   height: min-content;
+  overflow: hidden;
 }
 
 body,header {
