@@ -356,3 +356,5 @@ Stack trace:
 #3 C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\index.php(17): require('C:\\Users\\Abdul ...')
 #4 {main}
   thrown in C:\Users\Abdul Rahman\Local Sites\LGL-Website\app\public\wp-content\themes\lgl-theme\single-blog.php on line 39
+[29-Nov-2023 02:24:55 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_zip.dll' (tried: C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_zip.dll (The specified module could not be found), C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_php_zip.dll.dll (The specified module could not be found)) in Unknown on line 0
+[29-Nov-2023 02:25:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_zip.dll' (tried: C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_zip.dll (The specified module could not be found), C:/Users/Abdul Rahman/AppData/Roaming/Local/lightning-services/php-8.1.23+0/bin/win64/ext\php_php_zip.dll.dll (The specified module could not be found)) in Unknown on line 0
