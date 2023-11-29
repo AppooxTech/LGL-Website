@@ -132,7 +132,7 @@ $mobile_template = <<<TEXT
     } else if (link === 'blogs') {
       window.location = "<?php echo site_url('blogs-page'); ?>";
     } else if (!link) {
-      window.location = "<?php echo site_url('contact-us-page'); ?>";
+      window.location = "<?php echo site_url(''); ?>";
     }
   }
 
