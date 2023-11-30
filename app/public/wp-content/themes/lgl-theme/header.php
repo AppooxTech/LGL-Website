@@ -92,92 +92,93 @@ $mobile_template = <<<TEXT
   <header class="header-container">
     <nav class="navbar-container" id="navbar"></nav>
   </header>
-<body>
-<script>
-  const navbar = document.getElementById('navbar');
-  let html_template;
-  let drop_down;
-  let down_chev;
-  let menu_icon;
-  let overlay_container;
-  let backdrop;
-  let menu_container;
-  let menu_buttons;
-  let products_container;
+  <main>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let html_template;
+      let drop_down;
+      let down_chev;
+      let menu_icon;
+      let overlay_container;
+      let backdrop;
+      let menu_container;
+      let menu_buttons;
+      let products_container;
 
 
-  const set_template = () => {
-    const parser = new DOMParser();
+      const set_template = () => {
+        const parser = new DOMParser();
 
-    if (window.innerWidth > 430) {
-      html_template = parser.parseFromString(`<?php echo $normal_template ?>`, "text/html");
-      drop_down = html_template.getElementById('dropdown');
-      down_chev = html_template.getElementById('down-chev');
-    }
-    else {
-      html_template = parser.parseFromString(`<?php echo $mobile_template ?>`, "text/html");
-      menu_icon = html_template.getElementById('menu_icon');
-      backdrop = html_template.getElementById('backdrop');
-      menu_container = html_template.getElementById('menu-container');
-      products_container = html_template.getElementById('products-list-container');
-      overlay_container = html_template.getElementById('overlay-container');
-      down_chev = html_template.getElementById('down-chev');
-      menu_buttons = menu_container.children[0].children;
-    }
+        if (window.innerWidth > 430) {
+          html_template = parser.parseFromString(`<?php echo $normal_template ?>`, "text/html");
+          drop_down = html_template.getElementById('dropdown');
+          down_chev = html_template.getElementById('down-chev');
+        }
+        else {
+          html_template = parser.parseFromString(`<?php echo $mobile_template ?>`, "text/html");
+          menu_icon = html_template.getElementById('menu_icon');
+          backdrop = html_template.getElementById('backdrop');
+          menu_container = html_template.getElementById('menu-container');
+          products_container = html_template.getElementById('products-list-container');
+          overlay_container = html_template.getElementById('overlay-container');
+          down_chev = html_template.getElementById('down-chev');
+          menu_buttons = menu_container.children[0].children;
+        }
 
-    navbar.append(...html_template.body.children)
-  }
-
-  const redirect = (link = '') => {
-    if (link === 'contact-us') {
-      window.location = "<?php echo site_url("contact-us-page"); ?>";
-    } else if (link === 'blogs') {
-      window.location = "<?php echo site_url('blogs-page'); ?>";
-    } else if (!link) {
-      window.location = "<?php echo site_url(''); ?>";
-    }
-  }
-
-  const on_click = () => {
-    if (drop_down.classList.contains('hide')) {
-      drop_down.classList.remove('hide');
-      down_chev.classList.add('rotated');
-    } else if (!drop_down.classList.contains('hide')) {
-      drop_down.classList.add('hide');
-      down_chev.classList.remove('rotated');
-    }
-  }
-
-  const on_click_menu = () => {
-    if (backdrop.classList.contains('hide')) {
-      overlay_container.classList.remove('hide');
-      backdrop.classList.remove('hide');
-      menu_container.classList.remove('hide');
-
-      for (let button of menu_buttons) {
-        button.classList.remove('hide');
+        navbar.append(...html_template.body.children)
       }
 
-    } else {
-      overlay_container.classList.add('hide');
-      menu_container.classList.add('hide');
-      backdrop.classList.add('hide');
-
-
-      for (let button of menu_buttons) {
-        button.classList.add('hide');
+      const redirect = (link = '') => {
+        if (link === 'contact-us') {
+          window.location = "<?php echo site_url("contact-us-page"); ?>";
+        } else if (link === 'blogs') {
+          window.location = "<?php echo site_url('blogs-page'); ?>";
+        } else if (!link) {
+          window.location = "<?php echo site_url(''); ?>";
+        }
       }
-    }
-  }
 
-  const on_click_products = () => {
-    if (products_container.classList.contains('hide')) {
-      products_container.classList.remove('hide');
-      down_chev.classList.add('rotated');
-    }
-    else {
-      products_container.classList.add('hide');
-      down_chev.classList.remove('rotated');
-    }
-  }
-</script>
+      const on_click = () => {
+        if (drop_down.classList.contains('hide')) {
+          drop_down.classList.remove('hide');
+          down_chev.classList.add('rotated');
+        } else if (!drop_down.classList.contains('hide')) {
+          drop_down.classList.add('hide');
+          down_chev.classList.remove('rotated');
+        }
+      }
+
+      const on_click_menu = () => {
+        if (backdrop.classList.contains('hide')) {
+          overlay_container.classList.remove('hide');
+          backdrop.classList.remove('hide');
+          menu_container.classList.remove('hide');
+
+          for (let button of menu_buttons) {
+            button.classList.remove('hide');
+          }
+
+        } else {
+          overlay_container.classList.add('hide');
+          menu_container.classList.add('hide');
+          backdrop.classList.add('hide');
+
+
+          for (let button of menu_buttons) {
+            button.classList.add('hide');
+          }
+        }
+      }
+
+      const on_click_products = () => {
+        if (products_container.classList.contains('hide')) {
+          products_container.classList.remove('hide');
+          down_chev.classList.add('rotated');
+        }
+        else {
+          products_container.classList.add('hide');
+          down_chev.classList.remove('rotated');
+        }
+      }
+    </script>
