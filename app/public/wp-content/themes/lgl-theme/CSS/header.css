@@ -8,7 +8,7 @@ nav.navbar-container {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 10vh;
+  height: 20vh;
   max-height: 200px;
   position: sticky;
   top: 0px;
@@ -282,6 +282,12 @@ div#products-list-container.hide {
   visibility: hidden;
   display: none;
   height: 0px;
+}
+
+@media screen and (max-device-width:430px) {
+  nav.navbar-container {
+    height: 10vh;
+  }
 }
 
 
