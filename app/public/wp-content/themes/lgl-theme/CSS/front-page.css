@@ -26,8 +26,6 @@ div.aboutus-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 10%;
-  padding-right: 10%;
   padding-bottom: 5%;
   gap: 12px;
   color: var(--light);
@@ -47,14 +45,13 @@ section.aboutus {
 p.aboutus {
   font-size: 1.8vw;
   font-weight: 600;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 div.services-container {
   width: 100%;
   height: max-content;
-  padding-top: 20px;
-  padding-left: 15%;
-  padding-right: 15%;
   padding-bottom: 5%;
   text-align: left;
   display: flex;
@@ -80,13 +77,15 @@ p.services {
   font-weight: 500;
   text-align: left;
   text-indent: 5px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 h2.services {
   font-size: 2vw;
   font-weight: 800;
   text-align: left;
-  margin-bottom: 10px;
+  padding-left: 5%;
 }
 
 ul.services {
@@ -95,7 +94,8 @@ ul.services {
   text-align: left;
   list-style-type: square;
   list-style: none;
-  padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-left: 5%;
 }
 
@@ -119,11 +119,6 @@ section.footer-container {
 }
 
 @media screen and (max-device-width:430px) {
-  div.aboutus-container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-height: min-content;
-  }
 
   div.aboutus-container.aboutus-background::before {
     background-size: contain;
@@ -141,8 +136,6 @@ section.footer-container {
   }
 
   div.services-container {
-    padding-left: 5%;
-    padding-right: 5%;
     padding-bottom: 5%;
     min-height: min-content;
   }
