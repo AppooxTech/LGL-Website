@@ -1,6 +1,7 @@
 footer.footer-container {
+  width: 100vw;
+  max-width: 100vw;
   background-color: var(--dark-grey);
-  height: min-content;
   display: flex;
   flex-direction: column;
 }
@@ -89,8 +90,9 @@ div.powered-by {
     height: min-content;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-  }
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
 
   div.footer-content-container {
     height: min-content;
@@ -115,11 +117,14 @@ div.powered-by {
   section.location-section-container h3,
   section.contact-info-container h3 {
     font-size: 5vw;
+    padding-left: 20px;
   }
 
   section.location-section-container p,
   section.contact-info-container p {
     font-size: 3.5vw;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   div.powered-by {

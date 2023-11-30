@@ -2,10 +2,6 @@ div.front-page-container {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: span;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 section.header-container {
@@ -110,12 +106,6 @@ ul.services > li::before {
 
 ul.services > li {
   margin-top: 20px;
-}
-
-section.footer-container {
-  width: 100vw;
-  height: 15vh;
-  max-height: 100px;
 }
 
 @media screen and (max-device-width:430px) {

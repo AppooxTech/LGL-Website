@@ -1,8 +1,14 @@
+header.header-container {
+  min-width: 100vw;
+  max-height: min-content;
+  display: block;
+}
+
 nav.navbar-container {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 20vh;
+  height: 10vh;
   max-height: 200px;
   position: sticky;
   top: 0px;
@@ -248,6 +254,11 @@ button.menu-button {
   align-items: center;
   justify-content: space-around;
   color: var(--light);
+}
+
+button.menu-button.hide {
+  display: none;
+  visibility: hidden;
 }
 
 img#down-chev{

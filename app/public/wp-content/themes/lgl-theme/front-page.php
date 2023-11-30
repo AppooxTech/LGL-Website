@@ -13,8 +13,8 @@ $carousel_contents = [
 ];
 ?>
 
+<?php get_header(); ?>
 <div class="front-page-container">
-    <?php get_header(); ?>
     <section class="body-container">
         <?php get_template_part("components/carousel", '', ['contents' => $carousel_contents]); ?>
         <div class="aboutus-container aboutus-background">
@@ -78,10 +78,8 @@ $carousel_contents = [
                 <li>Consulting in the procurement of laboratory instruments and materials.</li>
             </ul>
     </section>
-    <section class="footer-container">
-        <?php get_footer(); ?>
-    </section>
 </div>
+<?php get_footer(); ?>
 
 <style>
     div.aboutus-container.aboutus-background::before {
