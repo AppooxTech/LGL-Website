@@ -127,9 +127,17 @@ div.carousel-content-image-container> img {
         padding: 5px;
     }
 
+    button.carousel-content-button {
+        margin-bottom: 5px;
+    }
+
     div.carousel-content-image-container {
         order: 1;
         width: 100%;
         height: min-content;
+    }
+
+    div.carousel-content-image-container > img {
+        margin-top: 20px;
     }
 }
