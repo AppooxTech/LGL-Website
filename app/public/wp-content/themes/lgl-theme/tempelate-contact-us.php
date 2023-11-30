@@ -60,8 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 }
 ?>
 
-<main class="contact-us-container">
-    <?php get_header(); ?>
+<?php get_header(); ?>
+<div class="contact-us-container">
     <section class="form-container">
         <form class="contact-us-form" method="post" action="<?php echo esc_url(get_permalink()); ?>">
             <h1 class="page-title">Contact Us</h1>
@@ -96,4 +96,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     <?php
     get_footer();
     ?>
-</main>
+</div>
