@@ -46,7 +46,6 @@ $normal_template = <<<TEXT
   TEXT;
 
 $mobile_template = <<<TEXT
-
     <div class="logo-container" onclick="redirect();" role="button">
       <img src="$template_directory_uri/images/LGL-New-Logo.png" alt="Business-Logo" class="logo">
       <span class="seo-hidden-text">LGL Light Guide Lund</span>
@@ -57,7 +56,7 @@ $mobile_template = <<<TEXT
     <div id="overlay-container" class="hide">
       <div id="menu-container" class="hide">
         <div class="menu">
-          <button class="menu-button" onclick="on_click_products();">
+          <button class="menu-button hide" onclick="on_click_products();">
             products
             <img src="$template_directory_uri/images/icons/icons8-chevron-down-50.png" id="down-chev" width="20">
           </button>
@@ -67,10 +66,10 @@ $mobile_template = <<<TEXT
             <span>item</span>
             <span>item</span>
             </div>
-          <button class="menu-button" onclick="on_click_menu(); redirect('blogs');">
+          <button class="menu-button hide" onclick="on_click_menu(); redirect('blogs');">
             Blogs
           </button>
-          <button class="menu-button" onclick="on_click_menu(); redirect('contact-us');">
+          <button class="menu-button hide" onclick="on_click_menu(); redirect('contact-us');">
             Contact us
           </button>
         </div>
@@ -90,9 +89,10 @@ $mobile_template = <<<TEXT
 </head>
 
 <body <?php body_class(); ?> onload="set_template()">
-  <nav class="navbar-container" id="navbar"></nav>
-</body>
-
+  <header class="header-container">
+    <nav class="navbar-container" id="navbar"></nav>
+  </header>
+<body>
 <script>
   const navbar = document.getElementById('navbar');
   let html_template;
@@ -102,6 +102,7 @@ $mobile_template = <<<TEXT
   let overlay_container;
   let backdrop;
   let menu_container;
+  let menu_buttons;
   let products_container;
 
 
@@ -121,6 +122,7 @@ $mobile_template = <<<TEXT
       products_container = html_template.getElementById('products-list-container');
       overlay_container = html_template.getElementById('overlay-container');
       down_chev = html_template.getElementById('down-chev');
+      menu_buttons = menu_container.children[0].children;
     }
 
     navbar.append(...html_template.body.children)
@@ -137,13 +139,13 @@ $mobile_template = <<<TEXT
   }
 
   const on_click = () => {
-      if (drop_down.classList.contains('hide')) {
-        drop_down.classList.remove('hide');
-        down_chev.classList.add('rotated');
-      } else if (!drop_down.classList.contains('hide')) {
-        drop_down.classList.add('hide');
-        down_chev.classList.remove('rotated');
-      }
+    if (drop_down.classList.contains('hide')) {
+      drop_down.classList.remove('hide');
+      down_chev.classList.add('rotated');
+    } else if (!drop_down.classList.contains('hide')) {
+      drop_down.classList.add('hide');
+      down_chev.classList.remove('rotated');
+    }
   }
 
   const on_click_menu = () => {
@@ -151,10 +153,20 @@ $mobile_template = <<<TEXT
       overlay_container.classList.remove('hide');
       backdrop.classList.remove('hide');
       menu_container.classList.remove('hide');
+
+      for (let button of menu_buttons) {
+        button.classList.remove('hide');
+      }
+
     } else {
       overlay_container.classList.add('hide');
       menu_container.classList.add('hide');
       backdrop.classList.add('hide');
+
+
+      for (let button of menu_buttons) {
+        button.classList.add('hide');
+      }
     }
   }
 
