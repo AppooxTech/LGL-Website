@@ -1,95 +1,90 @@
-.blog-posts-container {
+div.blogs-list-container {
   display: flex;
   flex-direction: column;
-  gap: 70px;
-  /* justify-content: center; */
-  align-items: center;
+  width: 100vw;
+}
 
+div.blogs-header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  background-color: var(--light);
   margin-bottom: 100px;
 }
 
-.page-title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-}
-
-.page-title {
-  /* text-align: center; */
-
-  font-size: 8em;
+div.blogs-title-container p {
+  font-size: 80px;
   font-style: italic;
 }
 
-/* Filter bar */
-
-.tag-filter {
-  text-decoration: none; /* Remove underline */
-  color: #4b4b4b;
-  background-color: var(--light);
-  border-radius: 10px;
-
-  padding: 7px;
-  font-size: 2.5em;
-
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.tag-title {
-  font-size: 2.5em;
-  font-weight: 600;
-
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.tags-bar {
+div.blogs-title-container {
   display: flex;
-  gap: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100px;
+}
 
-  height: 150px;
-  background-color: #000000;
-  margin-bottom: 50px;
+div.blogs-tags-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+div.blogs-tags-container a.tag-filter {
+  text-decoration: none;
+  color: var(--grey);
+  background-color: var(--light);
+  border: var(--light-grey) 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 2.5vw;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* blog items */
-
-.blog-item {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color from parent */
-
+div.blog-posts-container {
   display: flex;
   flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
 
-  /* border: 2px solid red; */
-  width: 50vw;
+ a.blog-item-container {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+div.blog-item-text {
+  width: 100%;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.blog-item-text p {
+  color: var(--light-grey);
+  font-size: 1.5vw;
 }
 
 /* blog items texts */
-.blog-item-details {
+div.blog-item-details {
   display: flex;
   align-items: flex-end;
   gap: 20px;
 }
 
-.blog-item-text {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 5px;
-}
-
-.blog-item-text > p {
-  color: #717171;
-  font-size: 1.5em;
-}
 
 .blog-item-text > h1 {
   font-size: 3em;
@@ -102,4 +97,29 @@
 .blog-item-details > date,
 .blog-item-details > tags {
   font-size: 1.2em;
+}
+
+@media screen and (max-device-width: 430px) {
+  div.blogs-title-container p {
+    font-size: 15vw;
+  }
+
+  div.blogs-tags-container a.tag-filter {
+    font-size: 1em;
+  }
+
+  a.blog-item-container {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  div.blog-item-text h2 {
+    font-size: 8vw;
+    padding-left: 10px;
+  }
+
+  div.blog-item-text p {
+    font-size: 5vw;
+    padding: 0 10px;
+  }
 }

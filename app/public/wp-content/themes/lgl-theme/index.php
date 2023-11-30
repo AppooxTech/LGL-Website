@@ -1,24 +1,23 @@
 <?php
-    get_header();
-    // if (have_posts()) :
-    //     while (have_posts()) : the_post();
+$tags = get_tags();
+get_header();
+?>
 
-    $tags = get_tags();
+<div class="blog-list-container">
+    <div class="blogs-header-container">
+        <div class="blogs-title-container">
+            <p>Blogs</p>
+        </div>
+        <div class="blogs-tags-container">
+            <a href="#" class="tag-filter" data-tag="all">All</a>
+            <?php foreach ($tags as $tag): ?>
+                <a href="#" class="tag-filter" data-tag="<?php echo esc_attr($tag->slug); ?>">
+                    <?php echo (string) $tag->name ?>
+                </a>
+            <?php endforeach; ?>
+        </div>
 
-    // Display tags as a horizontal bar
-    echo '<div class="blog-list-container">';
-    echo '<div class="page-title-container">';
-    echo '<p class="page-title">Blogs</p>';
-    echo '</div>';
-    echo '<div class="tags-bar">';
-    echo '<a href="#" class="tag-filter" data-tag="all">All</a>';
-    foreach ($tags as $tag) {
-        $tag_link = get_tag_link($tag->term_id);
-        echo '<a href="#" class="tag-filter" data-tag="' . esc_attr($tag->slug) . '">' . $tag->name . '</a>';
-    }
-    echo '</div>';
-    ?>
-    
+    </div>
     <div id="blog-posts-container" class="blog-posts-container">
         <?php
         // The Query for blog posts without tag filter
@@ -27,9 +26,9 @@
             'post_type' => 'post',
             'posts_per_page' => -1,
         );
-    
+
         $blog_query = new WP_Query($args);
-    
+
         // The Loop
         if ($blog_query->have_posts()) {
             while ($blog_query->have_posts()) {
@@ -44,25 +43,33 @@
                 $paragraphs = $dom->getElementsByTagName('p');
                 $tags = get_the_tags();
                 ?>
-                <a class="blog-item" href="<?php echo $permalink ?>">
+                <a class="blog-item-container" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
-                    
+
                     <div class="blog-item-text">
-                        <h1><?php the_title(); ?></h1>
-                        <p><?php the_excerpt() ?></p>
+                        <h2>
+                            <?php the_title(); ?>
+                        </h2>
+                        <p>
+                            <?php the_excerpt() ?>
+                        </p>
 
                         <div class="blog-item-details">
-                            
-                            <date><?php the_time('jS M Y'); ?></date>
+
+                            <date>
+                                <?php the_time('jS M Y'); ?>
+                            </date>
                             <tags>
-                                <?php 
+                                <?php
                                 $tags_count = count($tags);
                                 foreach ($tags as $index => $tag) {
                                     echo $tag->name;
                                     if ($index < $tags_count - 1) {
                                         echo ', ';
-                                    };
-                                };
+                                    }
+                                    ;
+                                }
+                                ;
                                 ?>
                             </tags>
                         </div>
@@ -78,39 +85,39 @@
         }
         ?>
     </div>
-    
+
     <script>
-jQuery(document).ready(function ($) {
-    $('.tag-filter').on('click', function (e) {
-        e.preventDefault();
-        var tag = $(this).data('tag');
+        jQuery(document).ready(function ($) {
+            $('.tag-filter').on('click', function (e) {
+                e.preventDefault();
+                var tag = $(this).data('tag');
 
-        $.ajax({
-            type: 'POST',
-            url: '<?php echo admin_url('admin-ajax.php'); ?>',
-            data: {
-                action: 'filter_posts',
-                tag: tag,
-            },
-            success: function (response) {
-                if (tag === 'all') {
-                    // Show all blog posts
-                    $('#blog-posts-container').html(response.all);
-                } else {
-                    // Show filtered blog posts
-                    $('#blog-posts-container').html(response.filtered);
-                }
-            },
+                $.ajax({
+                    type: 'POST',
+                    url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                    data: {
+                        action: 'filter_posts',
+                        tag: tag,
+                    },
+                    success: function (response) {
+                        if (tag === 'all') {
+                            // Show all blog posts
+                            $('#blog-posts-container').html(response.all);
+                        } else {
+                            // Show filtered blog posts
+                            $('#blog-posts-container').html(response.filtered);
+                        }
+                    },
+                });
+            });
         });
-    });
-});
-</script>
-  
+    </script>
 
- 
 
-<?php
-echo '</div>';
+
+
+    <?php
+    echo '</div>';
     get_footer();
 
- ?>
+    ?>
