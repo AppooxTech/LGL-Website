@@ -156,7 +156,8 @@ $mobile_template = <<<TEXT
           menu_container.classList.remove('hide');
 
           for (let button of menu_buttons) {
-            button.classList.remove('hide');
+            if (button.classList.contains('menu-button'))
+              button.classList.remove('hide');
           }
 
         } else {
@@ -166,7 +167,8 @@ $mobile_template = <<<TEXT
 
 
           for (let button of menu_buttons) {
-            button.classList.add('hide');
+            if (button.classList.contains('menu-button'))
+              button.classList.add('hide');
           }
         }
       }
