@@ -20,7 +20,9 @@ if (isset($args) && isset($contents)) {
                     <p class="carousel-content-description-body">
                         <?php echo esc_html($content['description']); ?>
                     </p>
-                    <?php get_template_part('components/button', 'carousel_content_button', ['button_txt' => 'View Product', 'custom_class' => 'carousel-content-button']); ?>
+                    <div class="content-btn-container">
+                        <?php get_template_part('components/button', 'carousel_content_button', ['button_txt' => 'View Product', 'custom_class' => 'carousel-content-button']); ?>
+                    </div>
                 </div>
                 <div class="carousel-content-image-container">
                     <img src="<? echo $content['image']; ?>" alt="Header">
