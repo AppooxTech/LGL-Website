@@ -9,7 +9,7 @@
 /* TOPIC SECTION */
 
 .blog-topic {
-  height: 81vh;
+  height: fit-content;
   background-color: #000000;
   padding: 2em 20vw;
   /* padding-left: 20vw; */
@@ -258,7 +258,7 @@ p.details {
   }
 
   .blog-topic {
-    height: 60vh;
+    height: min-content;
     padding: 2em 10vw;
     /* padding-left: 20vw; */
     color: #f7f7ff;
