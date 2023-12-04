@@ -80,8 +80,8 @@ form.contact-us-form {
 }
 
 button.submit-btn {
-  outline: 2px solid var(--dark);
-  border: 2px solid var(--dark);
+  outline: 1px solid var(--dark);
+  border: 1px solid var(--dark);
   background-color: var(--light);
   text-align: center;
   color: var(--dark);
