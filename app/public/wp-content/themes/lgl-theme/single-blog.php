@@ -113,7 +113,7 @@
                                 </div>
                                 
                                 <div class="related-blogs-details">
-                                    <h2><?php echo get_the_title(); ?></h2>
+                                    <h2 class="details"><?php echo get_the_title(); ?></h2>
                                     <tags>
                                     <?php 
                                         $tags = get_the_tags();
@@ -127,8 +127,8 @@
                                     ?>
                                     </tags>
                                     <div class="date-author">
-                                        <p><?php echo get_the_time('jS M Y'); ?></p>
-                                        <p><?php echo get_the_author(); ?></p>
+                                        <p class="details"><?php echo get_the_time('jS M Y'); ?></p>
+                                        <p class="details"> <?php echo get_the_author(); ?></p>
                                     </div>
                                 </div>
 
