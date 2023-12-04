@@ -1,6 +1,7 @@
 <?php
-$tags = get_tags();
 get_header();
+$tags = get_tags();
+
 ?>
 
 <div class="blog-list-container">
@@ -45,13 +46,12 @@ get_header();
                 ?>
                 <a class="blog-item-container" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
-
                     <div class="blog-item-text">
                         <h2>
                             <?php the_title(); ?>
                         </h2>
                         <p>
-                            <?php the_excerpt() ?>
+                            <?php echo get_the_excerpt() ?>
                         </p>
 
                         <div class="blog-item-details">
