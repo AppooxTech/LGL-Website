@@ -50,8 +50,8 @@
         <h1> <?php echo $topic ?></h1>
         <div class="sub-topic-info">
             <time><?php echo $post_date ?></time>
-            <p>Author: <?php echo $author ?></p>
-            <p>Tags: </p>
+            <p class="rmv-margin">Author: <?php echo $author ?></p>
+            <p class="rmv-margin">Tags: 
             <tags>
                 <?php 
                 $tags_count = count($tags);
@@ -65,6 +65,7 @@
                 }
                  ?>
             </tags>
+            </p>
             
         </div>
     </section>
@@ -112,7 +113,7 @@
                                 </div>
                                 
                                 <div class="related-blogs-details">
-                                    <h2><?php echo get_the_title(); ?></h2>
+                                    <h2 class="details"><?php echo get_the_title(); ?></h2>
                                     <tags>
                                     <?php 
                                         $tags = get_the_tags();
@@ -126,8 +127,8 @@
                                     ?>
                                     </tags>
                                     <div class="date-author">
-                                        <p><?php echo get_the_time('jS M Y'); ?></p>
-                                        <p><?php echo get_the_author(); ?></p>
+                                        <p class="details"><?php echo get_the_time('jS M Y'); ?></p>
+                                        <p class="details"> <?php echo get_the_author(); ?></p>
                                     </div>
                                 </div>
 

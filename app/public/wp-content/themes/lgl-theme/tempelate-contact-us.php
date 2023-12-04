@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                 <label for="message">Message:</label>
                 <textarea class="message" name="message" rows="6" required></textarea>
             </div>
-            <button type="submit" name="submit">Submit</button>
+            <button class="submit-btn" type="submit" name="submit">Submit</button>
         </form>
     </section>
     <?php

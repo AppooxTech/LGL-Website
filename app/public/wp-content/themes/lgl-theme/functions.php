@@ -128,18 +128,31 @@ function filter_posts() {
             libxml_clear_errors();
             $images = $dom->getElementsByTagName('img');
             $paragraphs = $dom->getElementsByTagName('p');
+            $tags = get_the_tags();
             ?>
-                <a class="blog-item" href="<?php echo $permalink ?>">
+<a class="blog-item-container" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
                     
                     <div class="blog-item-text">
-                        <h1><?php the_title(); ?></h1>
+                        <h2><?php the_title(); ?></h2>
                         <p><?php the_excerpt() ?></p>
                         
                         <div class="blog-item-details">
                             
                             <date><?php the_time('jS M Y'); ?></date>
-                            <p>By: <?php the_author(); ?></p>
+                            <tags>
+                                <?php
+                                $tags_count = count($tags);
+                                foreach ($tags as $index => $tag) {
+                                    echo $tag->name;
+                                    if ($index < $tags_count - 1) {
+                                        echo ', ';
+                                    }
+                                    ;
+                                }
+                                ;
+                                ?>
+                            </tags>
                         </div>
                         
                         
@@ -167,18 +180,31 @@ function filter_posts() {
             libxml_clear_errors();
             $images = $dom->getElementsByTagName('img');
             $paragraphs = $dom->getElementsByTagName('p');
+            $tags = get_the_tags();
             ?>
-                <a class="blog-item" href="<?php echo $permalink ?>">
+                <a class="blog-item-container" href="<?php echo $permalink ?>">
                     <?php echo $dom->saveHTML($images->item(0)); ?>
                     
                     <div class="blog-item-text">
-                        <h1><?php the_title(); ?></h1>
+                        <h2><?php the_title(); ?></h2>
                         <p><?php the_excerpt() ?></p>
                         
                         <div class="blog-item-details">
                             
                             <date><?php the_time('jS M Y'); ?></date>
-                            <p>By: <?php the_author(); ?></p>
+                            <tags>
+                                <?php
+                                $tags_count = count($tags);
+                                foreach ($tags as $index => $tag) {
+                                    echo $tag->name;
+                                    if ($index < $tags_count - 1) {
+                                        echo ', ';
+                                    }
+                                    ;
+                                }
+                                ;
+                                ?>
+                            </tags>
                         </div>
                         
                         

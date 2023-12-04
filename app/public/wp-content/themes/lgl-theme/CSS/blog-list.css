@@ -15,7 +15,7 @@ div.blogs-header-container {
 }
 
 div.blogs-title-container p {
-  font-size: 80px;
+  font-size: 100px;
   font-style: italic;
 }
 
@@ -23,7 +23,7 @@ div.blogs-title-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 120px;
 }
 
 div.blogs-tags-container {
@@ -31,7 +31,7 @@ div.blogs-tags-container {
   padding: 10px;
   gap: 10px;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: var(--dark);
 }
@@ -54,9 +54,10 @@ div.blog-posts-container {
   flex-direction: column;
   gap: 70px;
   align-items: center;
+  margin-bottom: 50px;
 }
 
- a.blog-item-container {
+a.blog-item-container {
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -70,12 +71,13 @@ div.blog-item-text {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 div.blog-item-text p {
   color: var(--light-grey);
   font-size: 1.5vw;
+  margin: 0;
 }
 
 /* blog items texts */
@@ -85,9 +87,9 @@ div.blog-item-details {
   gap: 20px;
 }
 
-
-.blog-item-text > h1 {
+.blog-item-text > h2 {
   font-size: 3em;
+  margin: 0;
 }
 
 .blog-item-details > tags {
@@ -120,6 +122,13 @@ div.blog-item-details {
 
   div.blog-item-text p {
     font-size: 5vw;
+    padding: 0 10px;
+  }
+  div.blog-posts-container {
+    gap: 10px;
+  }
+
+  div.blog-item-details {
     padding: 0 10px;
   }
 }

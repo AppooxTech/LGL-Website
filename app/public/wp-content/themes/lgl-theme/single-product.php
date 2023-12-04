@@ -44,7 +44,7 @@
         
             // Display the very first <p> tag without a pairing
             if ($paragraphs->length > 0) {
-                echo '<div class="product-description">';
+                echo '<div class="product-description-container">';
                 echo $dom->saveHTML($paragraphs->item(0));
                 echo '</div>';
             }

@@ -2,7 +2,7 @@
 $contents = [];
 
 if (isset($args) && isset($contents)) {
-    $contets = $args['contents'];
+    $contents = $args['contents'];
 }
 ?>
 
@@ -11,7 +11,7 @@ if (isset($args) && isset($contents)) {
         <img src="<?php echo get_template_directory_uri(); ?>/images/icons/icons8-chevron-left-50.png" alt="left">
     </button>
     <div id="carousel-view">
-        <?php foreach ($contets as $content): ?>
+        <?php foreach ($contents as $content): ?>
             <div class="carousel-single-content-container">
                 <div class="carousel-content-description-container">
                     <h2 class="carousel-content-description-header">
@@ -20,7 +20,9 @@ if (isset($args) && isset($contents)) {
                     <p class="carousel-content-description-body">
                         <?php echo esc_html($content['description']); ?>
                     </p>
-                    <?php get_template_part('components/button', 'carousel_content_button', ['button_txt' => 'View Product', 'custom_class' => 'carousel-content-button']); ?>
+                    <div class="content-btn-container">
+                        <?php get_template_part('components/button', 'carousel_content_button', ['button_txt' => 'View Product', 'custom_class' => 'carousel-content-button']); ?>
+                    </div>
                 </div>
                 <div class="carousel-content-image-container">
                     <img src="<? echo $content['image']; ?>" alt="Header">
@@ -37,9 +39,13 @@ if (isset($args) && isset($contents)) {
     const carousel_view = document.getElementById('carousel-view');
 
     const scroll_view = (scroll_direction) => {
-        if (scroll_direction === 'left')
-        carousel_view.scrollBy(-10,0);
-    else if (scroll_direction === 'right')
-        carousel_view.scrollBy(10,0);
+        // Increase the scroll amount for better visibility
+        const scrollAmount = 10; // Adjust this value as needed
+
+        if (scroll_direction === 'left') {
+            carousel_view.scrollBy(-1000, 0);
+        } else if (scroll_direction === 'right') {
+            carousel_view.scrollBy(scrollAmount, 0);
+        }
     }
 </script>

@@ -8,7 +8,7 @@ footer.footer-container {
 
 div.footer-content-container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: flex-start;
   gap: 50px;
   color: var(--light);
@@ -25,11 +25,15 @@ section.logo-section-container {
   width: 20%;
   height: 100%;
   padding-top: 3%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 section.logo-section-container img {
   object-fit: contain;
   margin: 10px;
+  width: 100%;
 }
 
 section.contact-info-container {
@@ -46,6 +50,11 @@ section.location-section-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+h3.footer-title {
+  margin: 0;
+  margin-top: 30px;
 }
 
 section.location-section-container h3,
@@ -92,7 +101,7 @@ div.powered-by {
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
-   }
+  }
 
   div.footer-content-container {
     height: min-content;
