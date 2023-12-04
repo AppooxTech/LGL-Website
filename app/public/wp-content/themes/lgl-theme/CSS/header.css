@@ -8,7 +8,7 @@ nav.navbar-container {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 20vh;
+  height: 150px;
   max-height: 200px;
   position: sticky;
   top: 0px;
@@ -32,7 +32,8 @@ span.seo-hidden-text {
 }
 
 img.logo {
-  width: 80%;
+  width: 70%;
+  max-width: 300px;
   height: 100%;
   justify-self: center;
   align-self: center;
@@ -261,7 +262,7 @@ button.menu-button.hide {
   visibility: hidden;
 }
 
-img#down-chev{
+img#down-chev {
   transition: all 200ms ease-out;
 }
 
@@ -284,10 +285,8 @@ div#products-list-container.hide {
   height: 0px;
 }
 
-@media screen and (max-device-width:430px) {
+@media screen and (max-device-width: 430px) {
   nav.navbar-container {
     height: 10vh;
   }
 }
-
-
