@@ -66,6 +66,10 @@
   color: black;
 }
 
+.rmv-margin {
+  margin: 0;
+}
+
 /* Blog Body */
 
 .intro-text,

@@ -50,8 +50,8 @@
         <h1> <?php echo $topic ?></h1>
         <div class="sub-topic-info">
             <time><?php echo $post_date ?></time>
-            <p>Author: <?php echo $author ?></p>
-            <p>Tags: </p>
+            <p class="rmv-margin">Author: <?php echo $author ?></p>
+            <p class="rmv-margin">Tags: 
             <tags>
                 <?php 
                 $tags_count = count($tags);
@@ -65,6 +65,7 @@
                 }
                  ?>
             </tags>
+            </p>
             
         </div>
     </section>
