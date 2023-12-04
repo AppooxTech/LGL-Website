@@ -124,4 +124,11 @@ div.blog-item-details {
     font-size: 5vw;
     padding: 0 10px;
   }
+  div.blog-posts-container {
+    gap: 10px;
+  }
+
+  div.blog-item-details {
+    padding: 0 10px;
+  }
 }
