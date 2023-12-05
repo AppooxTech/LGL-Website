@@ -29,6 +29,7 @@
         </div>
         <div class="powered-by">
             <p><i class="fa-regular fa-copyright"></i> Powered by ReckonTech</p>
+            <span class="rights">All rights reserved</span>
         </div>
     </footer>
 </body>
