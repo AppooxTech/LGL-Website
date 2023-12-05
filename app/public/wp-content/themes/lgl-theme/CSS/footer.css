@@ -94,6 +94,11 @@ div.powered-by {
   margin-bottom: 20px;
 }
 
+span.rights {
+  font-size: 1.5vw;
+  color: var(--light-grey);
+}
+
 @media screen and (max-device-width: 430px) {
   footer.footer-container {
     height: min-content;
