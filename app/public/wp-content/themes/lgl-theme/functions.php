@@ -222,9 +222,13 @@ function filter_posts() {
     wp_send_json(array('all' => $all_content, 'filtered' => $filtered_content));
 }
 
+function generate_random_hex () {
+    $hex = bin2hex(random_bytes(10));
+    return (string) $hex;
+}
 
 add_action('wp_enqueue_scripts', 'enqueue_jquery');
 add_action('wp_ajax_filter_posts', 'filter_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
-
+add_action('wp_enqueue_scripts','generate_random_hex');
 
